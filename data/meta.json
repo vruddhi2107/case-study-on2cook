@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "pageTitle": "Case studies",
+    "pageTitleHighlight": "studies",
+    "pageSubtitle": "Real kitchens. Real results. See how businesses are transforming their operations and growing with {brand}.",
+    "brand": "on2cook",
+    "ctaBand": {
+      "titlePlain": "Ready to write your",
+      "titleItalic": "success story?",
+      "subtitle": "Join 1000+ businesses transforming their kitchens with on2cook.",
+      "buttonText": "Book a Demo",
+      "buttonUrl": "#"
+    },
+    "siteUrl": "",
+    "tagline": "Intelligent cooking solutions for modern kitchens.",
+    "contact": {
+      "email": "hello@on2cook.com",
+      "phone": "+91 98765 43210",
+      "location": "Mumbai, India"
+    },
+    "socialLinks": []
+  }
+}

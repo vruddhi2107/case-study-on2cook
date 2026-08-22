@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies — on2cook</title>
+<meta name="description" content="Real kitchens. Real results. See how businesses are transforming their operations and growing with on2cook.">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // Logo drop-in: assets/images/logo.svg -> logo.png -> text wordmark.
+  // Defined here (not in js/shared.js) so it exists before the <img>
+  // below can fire its onerror — that file loads later, at the bottom
+  // of the page, and 404s can resolve before it's parsed.
+  function handleLogoError(img, stage) {
+    if (stage === 1) {
+      img.src = "assets/images/logo.png";
+      img.setAttribute("onerror", "handleLogoError(this, 2)");
+    } else {
+      img.style.display = "none";
+      var fallback = img.nextElementSibling;
+      if (fallback) fallback.style.display = "flex";
+    }
+  }
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav__row">
+    <a href="index.html" class="logo" aria-label="on2cook">
+      <img src="assets/images/logo.svg" alt="on2cook" class="logo__img" onerror="handleLogoError(this, 1)">
+      <span class="logo__text" style="display:none;">on2<span>cook</span><sup>&reg;</sup></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary" id="navSiteLink"></nav>
+    <div class="nav__cta">
+      <a class="btn btn--red" href="#" data-demo-cta>Book a Demo
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <span class="hero__eyebrow">On2cook Success Stories</span>
+    <h1 id="heroTitle">Case <em>studies</em></h1>
+    <p id="heroSub">Real kitchens. Real results.</p>
+  </section>
+
+  <!-- ============ CASE STUDY LIST (rendered from data/case-studies.json) ============ -->
+  <section class="list" id="caseStudyList" aria-live="polite">
+    <article class="card card--img-right">
+      <div class="card__content">
+        <span class="card__tag skeleton" style="width:70px;height:12px;border-radius:4px;"></span>
+        <span class="card__title skeleton" style="height:60px;border-radius:6px;margin-top:8px;"></span>
+        <span class="card__excerpt skeleton" style="height:40px;border-radius:6px;margin-top:8px;"></span>
+      </div>
+      <div class="card__media skeleton"></div>
+    </article>
+  </section>
+
+  <!-- ============ CTA BAND (rendered from data/case-studies.json meta.ctaBand) ============ -->
+  <div id="ctaSlot"></div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo" aria-label="on2cook">
+        <img src="assets/images/logo.svg" alt="on2cook" class="logo__img" onerror="handleLogoError(this, 1)">
+        <span class="logo__text" style="display:none;">on2<span>cook</span><sup>&reg;</sup></span>
+      </a>
+      <p id="footerTagline">Intelligent cooking solutions for modern kitchens.</p>
+      <div class="footer__social" id="footerSocial"></div>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <ul id="footerContact"></ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>&copy; <span id="year"></span> on2cook. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/shared.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
