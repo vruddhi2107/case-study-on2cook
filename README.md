@@ -168,4 +168,5 @@ on2cook-case-studies/
 - Add as many case studies as you like — the listing page and pagination ("Previous / Next" at the bottom of each detail page) update automatically.
 - Nothing on the page links to nowhere: the old placeholder nav dropdowns (Solutions/Industries/Resources/About us) and the footer's Solutions/Resources/Company columns were removed since they didn't lead anywhere in this project. The footer's social icons only render for platforms you actually list in `meta.socialLinks`, and the nav's secondary link only appears once `meta.siteUrl` is set — see section 2 above.
 #   c a s e - s t u d y - o n 2 c o o k  
+ #   c a s e - s t u d y - o n 2 c o o k  
  
