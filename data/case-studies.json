@@ -124,6 +124,95 @@
         "text": "",
         "author": ""
       }
+    },
+    {
+      "slug": "tazatable",
+      "category": "QSR",
+      "imageSide": "left",
+      "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
+      "cardTitlePlain": "Improving Efficiency & Consistency for",
+      "cardTitleHighlight": "a Growing Cafe Chain",
+      "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
+      "cardImage": "",
+      "heroImage": "",
+      "snapshot": {
+        "description": "Haldiram is one of India's most beloved food brands, known for its wide range of sweets, snacks, and savory delights. With a legacy dating back to 1937, Haldiram has built a strong presence across the country, serving millions of customers with taste and trust.",
+        "facts": [
+          {
+            "label": "Industry",
+            "value": "QSR / Sweets & Snacks"
+          },
+          {
+            "label": "Locations",
+            "value": "150+ outlets"
+          },
+          {
+            "label": "Founded",
+            "value": "1937"
+          },
+          {
+            "label": "Region",
+            "value": "India"
+          }
+        ]
+      },
+      "challenge": {
+        "title": "Inconsistent Quality, High Manual Effort & Longer Preparation Time",
+        "description": "With a wide variety of menu items and high footfall across outlets, Haldiram's faced challenges in maintaining consistent taste and quality. Manual cooking processes led to longer preparation times, higher dependency on skilled staff, and operational inefficiencies.",
+        "points": [
+          "Inconsistent taste and quality across outlets",
+          "High manual effort and dependency on skilled staff",
+          "Longer cooking times affecting order turnaround",
+          "Higher food wastage and operational costs"
+        ]
+      },
+      "solution": {
+        "title": "Switching to",
+        "titleHighlight": "on2cook",
+        "description": "Haldiram's partnered with on2cook to bring automation and precision to their kitchens. With standardized recipes, intelligent cooking, and consistent execution, on2cook helped streamline operations across all outlets.",
+        "points": [
+          "Standardized recipes & automated cooking",
+          "Reduced dependency on skilled staff",
+          "Faster cooking with consistent quality",
+          "Better control on costs & wastage"
+        ],
+        "image": ""
+      },
+      "impact": {
+        "stats": [
+          {
+            "value": "60%",
+            "label": "Faster Prep"
+          },
+          {
+            "value": "35%",
+            "label": "Less Food Waste"
+          },
+          {
+            "value": "2x",
+            "label": "Outlet Throughput"
+          },
+          {
+            "value": "40%",
+            "label": "Higher Customer Satisfaction"
+          }
+        ]
+      },
+      "results": {
+        "title": "The Results",
+        "description": "On2cook delivered tangible outcomes that strengthened operations and customer experience.",
+        "points": [
+          "Consistent taste and quality across all outlets",
+          "Faster service and reduced wait times",
+          "Lower operational costs and food waste",
+          "Happier customers and higher retention"
+        ],
+        "image": ""
+      },
+      "quote": {
+        "text": "",
+        "author": ""
+      }
     }
   ]
 }
