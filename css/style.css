@@ -436,72 +436,125 @@ ul { margin: 0; padding: 0; list-style: none; }
 .cta-band .btn { position: relative; }
 
 /* ==========================================================================
-   Footer
+   Footer — matches the on2cook.com production footer reference
    ========================================================================== */
 .site-footer {
-  border-top: 1px solid var(--ink-08);
-  padding: 56px var(--gutter) 28px;
+  background: var(--black);
+  color: var(--white);
+  padding: clamp(48px, 8vw, 80px) var(--gutter) 0;
+  font-family: var(--font-body);
+  position: relative;
+  overflow: hidden;
 }
-.footer__grid {
+
+/* decorative red dot-grid, faded into the top edge of the footer */
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: clamp(90px, 12vw, 160px);
+  background-image: radial-gradient(var(--red) 1.4px, transparent 1.4px);
+  background-size: 15px 15px;
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.footer-top {
+  position: relative;
   max-width: var(--container);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 32px;
-  align-items: start;
-}
-.footer__brand .logo { margin-bottom: 12px; }
-.footer__brand p {
-  font-size: 14px;
-  color: var(--ink-60);
-  max-width: 26ch;
-}
-.footer__social {
   display: flex;
-  gap: 10px;
-  margin-top: 18px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: clamp(20px, 4vw, 36px);
 }
-.footer__social a {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--red);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s var(--ease);
-}
-.footer__social a:hover { transform: translateY(-3px); }
-.footer__social svg { width: 15px; height: 15px; }
 
-.footer__col h4 {
-  font-size: 13px;
+.footer-brand { display: flex; flex-direction: column; gap: 14px; max-width: 280px; }
+
+/* A single logo file "just works" in both the (light) nav and this dark
+   footer: brightness(0)+invert(1) forces whatever you drop in to render
+   as a clean white silhouette here, with no separate white logo file
+   needed. See README section 3. */
+.footer-logo-wrap .logo__img { height: clamp(40px, 5vw, 52px);  }
+.footer-logo-wrap .logo__text { color: #fff; }
+.footer-logo-wrap .logo__text span { color: var(--red); }
+
+.footer-tagline {
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.9);
+}
+.footer-tagline strong { font-weight: 800; }
+
+.footer-contact { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.footer-contact li { font-size: 13px; color: rgba(255, 255, 255, 0.6); }
+.footer-contact a { color: rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.2s var(--ease); }
+.footer-contact a:hover { color: #fff; }
+
+.footer-nav-columns { display: flex; flex-wrap: wrap; gap: clamp(40px, 6vw, 100px); }
+
+.footer-col-title {
+  font-family: var(--font-head);
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ink-40);
-  margin-bottom: 16px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  color: #fff;
 }
-.footer__col ul { display: flex; flex-direction: column; gap: 11px; }
-.footer__col a { font-size: 14.5px; color: var(--ink-80); transition: color 0.2s var(--ease); }
-.footer__col a:hover { color: var(--red); }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; }
+.footer-col ul li a {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.2s var(--ease);
+}
+.footer-col ul li a:hover { color: #fff; }
 
-.footer__bottom {
+.footer-socials { display: flex; gap: 12px; margin-top: 2px; }
+.footer-social-btn {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  transition: background 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+.footer-social-btn:hover { background: rgba(255, 255, 255, 0.18); border-color: #fff; }
+.footer-social-btn svg { width: 18px; height: 18px; }
+
+.footer-bottom {
+  position: relative;
   max-width: var(--container);
-  margin: 44px auto 0;
-  padding-top: 22px;
-  border-top: 1px solid var(--ink-08);
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 18px 0 24px;
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
-  color: var(--ink-40);
+  align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
-.footer__bottom a { color: var(--ink-40); }
-.footer__bottom a:hover { color: var(--red); }
-.footer__bottom-links { display: flex; gap: 18px; }
+.footer-bottom p { font-size: 13px; color: rgba(255, 255, 255, 0.7); margin: 0; }
+.footer-bottom-links { display: flex; gap: 0; align-items: center; }
+.footer-bottom-links a { font-size: 13px; color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.2s var(--ease); }
+.footer-bottom-links a:hover { color: #fff; }
+.footer-bottom-links span { color: rgba(255, 255, 255, 0.4); margin: 0 12px; }
+
+@media (max-width: 900px) {
+  .footer-nav-columns { gap: 40px; }
+}
+@media (max-width: 560px) {
+  .footer-top { flex-direction: column; gap: 32px; }
+  .footer-brand { max-width: none; }
+  .footer-nav-columns { gap: 28px; width: 100%; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
 
 /* ==========================================================================
    Detail page
@@ -819,12 +872,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   .section--split.flip { direction: ltr; }
   .section--split .card__media { order: -1; }
   .facts, .impact-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
   .hero { padding: 60px var(--gutter) 40px; }
   .card__content { padding: 28px; }
   .facts, .impact-grid { grid-template-columns: 1fr 1fr; }
   .pagenav { flex-direction: column; }
-  .footer__grid { grid-template-columns: 1fr; }
 }

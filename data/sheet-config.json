@@ -1,0 +1,5 @@
+{
+  "_comment": "Fill in both URLs below to make the site read directly from your Google Sheet on every page load — edit the sheet, refresh the page, see the change. No developer, no deploy, no waiting for GitHub Actions. Leave either blank and the site quietly falls back to data/case-studies.json instead. See README.md section 5 for how to get these two links.",
+  "caseStudiesCsvUrl": "",
+  "settingsCsvUrl": ""
+}

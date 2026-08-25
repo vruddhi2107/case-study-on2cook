@@ -11,11 +11,23 @@ Reads the sheet URL from the SHEET_CSV_URL environment variable (set as a
 GitHub Actions secret / repo variable — see .github/workflows/sync-sheet.yml).
 Falls back to --url if passed on the command line, for local testing.
 
-How to get SHEET_CSV_URL:
-    In Google Sheets: File -> Share -> Publish to web -> select the sheet
-    tab -> Comma-separated values (.csv) -> Publish. Copy the generated
-    link, it looks like:
-    https://docs.google.com/spreadsheets/d/e/2PACX-.../pub?gid=0&single=true&output=csv
+Two tabs, two links:
+    This project reads from TWO tabs in your Google Sheet:
+      1. "Case Studies" — one row per case study (see the column list below)
+      2. "Site Settings" — key/value rows for hero copy, CTA button link,
+         contact info, and social links (see settings_rows_to_meta() below
+         for the exact keys, or README.md section 5)
+
+    Publish each tab separately (File -> Share -> Publish to web -> pick
+    the tab -> CSV -> Publish) to get two separate CSV links, then set:
+      SHEET_CSV_URL      = the "Case Studies" tab's CSV link
+      SETTINGS_CSV_URL   = the "Site Settings" tab's CSV link
+
+    Note: this script is the *backup* sync path, used by the GitHub
+    Action to keep data/case-studies.json fresh as a fallback. For
+    instant updates with no deploy at all, see data/sheet-config.json —
+    filling that in makes the live site fetch straight from these same
+    two CSV links on every page load.
 
 Sheet columns (one row per case study — see README.md for the full guide):
     slug, category, imageSide, title,
@@ -68,6 +80,57 @@ def split_points(raw: str):
     if not raw:
         return []
     return [p.strip() for p in raw.split("|") if p.strip()]
+
+
+def settings_rows_to_meta(rows, defaults: dict) -> dict:
+    """Turn the 'Site Settings' tab (key, value rows) into the meta object,
+    merged over `defaults` (normally data/meta.json's existing meta) so a
+    sheet that's missing a row or two never breaks the page — it just
+    keeps whatever was there before for that one field."""
+    values = {(r.get("key") or "").strip(): (r.get("value") or "").strip() for r in rows}
+
+    def get(key, default=""):
+        return values.get(key) or default
+
+    meta = json.loads(json.dumps(defaults))  # deep copy
+    meta["pageTitle"] = get("page_title", meta.get("pageTitle", "Case studies"))
+    meta["pageTitleHighlight"] = get("page_title_highlight", meta.get("pageTitleHighlight", "studies"))
+    meta["pageSubtitle"] = get("page_subtitle", meta.get("pageSubtitle", ""))
+    meta["brand"] = get("brand", meta.get("brand", "on2cook"))
+
+    cta = meta.setdefault("ctaBand", {})
+    cta["titlePlain"] = get("cta_title_plain", cta.get("titlePlain", "Ready to write your"))
+    cta["titleItalic"] = get("cta_title_italic", cta.get("titleItalic", "success story?"))
+    cta["subtitle"] = get("cta_subtitle", cta.get("subtitle", ""))
+    cta["buttonText"] = get("cta_button_text", cta.get("buttonText", "Book a Demo"))
+    cta["buttonUrl"] = get("cta_button_url", cta.get("buttonUrl", "#"))
+
+    if "site_url" in values:
+        meta["siteUrl"] = values["site_url"]
+    meta["tagline"] = get("tagline", meta.get("tagline", ""))
+
+    contact = meta.setdefault("contact", {})
+    if "contact_email" in values:
+        contact["email"] = values["contact_email"]
+    if "contact_phone" in values:
+        contact["phone"] = values["contact_phone"]
+    if "contact_location" in values:
+        contact["location"] = values["contact_location"]
+
+    if "privacy_url" in values:
+        meta["privacyUrl"] = values["privacy_url"]
+    if "terms_url" in values:
+        meta["termsUrl"] = values["terms_url"]
+
+    social = []
+    for platform in ("facebook", "instagram", "linkedin", "youtube", "twitter"):
+        url = values.get(f"social_{platform}_url")
+        if url:
+            social.append({"platform": platform, "url": url})
+    if social or any(k.startswith("social_") for k in values):
+        meta["socialLinks"] = social
+
+    return meta
 
 
 def row_to_case_study(row: dict) -> dict:
@@ -128,14 +191,17 @@ def row_to_case_study(row: dict) -> dict:
 
 def main():
     url = os.environ.get("SHEET_CSV_URL")
+    settings_url = os.environ.get("SETTINGS_CSV_URL")
     if len(sys.argv) > 1 and sys.argv[1]:
         url = sys.argv[1]
+    if len(sys.argv) > 2 and sys.argv[2]:
+        settings_url = sys.argv[2]
 
     if not url:
         print("ERROR: no sheet URL. Set SHEET_CSV_URL env var or pass it as an argument.", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Fetching sheet CSV...")
+    print(f"Fetching case studies sheet...")
     csv_text = fetch_csv(url)
     reader = csv.DictReader(io.StringIO(csv_text))
 
@@ -150,9 +216,18 @@ def main():
         print("ERROR: sheet produced zero case studies — refusing to overwrite existing data.", file=sys.stderr)
         sys.exit(1)
 
-    meta = {}
+    defaults = {}
     if META_FILE.exists():
-        meta = json.loads(META_FILE.read_text()).get("meta", {})
+        defaults = json.loads(META_FILE.read_text()).get("meta", {})
+
+    meta = defaults
+    if settings_url:
+        print("Fetching site settings sheet...")
+        settings_text = fetch_csv(settings_url)
+        settings_reader = list(csv.DictReader(io.StringIO(settings_text)))
+        meta = settings_rows_to_meta(settings_reader, defaults)
+    else:
+        print("No SETTINGS_CSV_URL set — using data/meta.json as-is for site settings.")
 
     output = {"meta": meta, "caseStudies": case_studies}
     OUTPUT_FILE.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n")

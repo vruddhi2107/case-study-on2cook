@@ -11,13 +11,19 @@
       "buttonText": "Book a Demo",
       "buttonUrl": "#"
     },
-    "siteUrl": "",
-    "tagline": "Intelligent cooking solutions for modern kitchens.",
+    "siteUrl": "https://on2cook.com",
+    "tagline": "World's **FASTEST** Cooking Device",
     "contact": {
       "email": "hello@on2cook.com",
       "phone": "+91 98765 43210",
       "location": "Mumbai, India"
     },
-    "socialLinks": []
+    "socialLinks": [
+      { "platform": "linkedin", "url": "https://www.linkedin.com/company/on2cook" },
+      { "platform": "facebook", "url": "https://www.facebook.com/on2cook" },
+      { "platform": "instagram", "url": "https://www.instagram.com/on2cook" }
+    ],
+    "privacyUrl": "https://on2cook.com/privacy",
+    "termsUrl": "https://on2cook.com/terms"
   }
 }
