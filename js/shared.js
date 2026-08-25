@@ -192,7 +192,7 @@ function settingsRowsToMeta(rows) {
       titleItalic: orDefault("cta_title_italic", "success story?"),
       subtitle: orDefault("cta_subtitle", "Join 1000+ businesses transforming their kitchens with on2cook."),
       buttonText: orDefault("cta_button_text", "Book a Demo"),
-      buttonUrl: orDefault("cta_button_url", "#"),
+      buttonUrl: orDefault("cta_button_url", "https://on2cook.com/#book_a_demo"),
     },
     siteUrl: get("site_url"),
     tagline: orDefault("tagline", "Intelligent cooking solutions for modern kitchens."),
@@ -301,7 +301,7 @@ function renderCtaBand(meta) {
       <div class="cta-band__inner">
         <h2>${escapeHtml(c.titlePlain || "Ready to write your")} <i>${escapeHtml(c.titleItalic || "success story?")}</i></h2>
         <p>${escapeHtml(c.subtitle || "")}</p>
-        <a class="btn btn--white" href="${escapeAttr(c.buttonUrl || "#")}">
+        <a class="btn btn--white" href="${escapeAttr(c.buttonUrl || "https://on2cook.com/#book_a_demo")}">
           ${escapeHtml(c.buttonText || "Book a Demo")} ${iconArrow()}
         </a>
       </div>
@@ -344,7 +344,7 @@ function boldMarkup(str) {
  * - Privacy/Terms links only appear if meta.privacyUrl / meta.termsUrl are set
  */
 function renderChrome(meta) {
-  const demoUrl = (meta.ctaBand && meta.ctaBand.buttonUrl) || "#";
+  const demoUrl = (meta.ctaBand && meta.ctaBand.buttonUrl) || "https://on2cook.com/#book_a_demo";
   document.querySelectorAll("[data-demo-cta]").forEach((el) => { el.href = demoUrl; });
 
   const siteLinkSlot = document.getElementById("navSiteLink");

@@ -103,7 +103,7 @@ def settings_rows_to_meta(rows, defaults: dict) -> dict:
     cta["titleItalic"] = get("cta_title_italic", cta.get("titleItalic", "success story?"))
     cta["subtitle"] = get("cta_subtitle", cta.get("subtitle", ""))
     cta["buttonText"] = get("cta_button_text", cta.get("buttonText", "Book a Demo"))
-    cta["buttonUrl"] = get("cta_button_url", cta.get("buttonUrl", "#"))
+    cta["buttonUrl"] = get("cta_button_url", cta.get("buttonUrl", "https://on2cook.com/#book_a_demo"))
 
     if "site_url" in values:
         meta["siteUrl"] = values["site_url"]
