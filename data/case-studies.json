@@ -9,14 +9,14 @@
       "titleItalic": "success story?",
       "subtitle": "Join 1000+ businesses transforming their kitchens with on2cook.",
       "buttonText": "Book a Demo",
-      "buttonUrl": "https://www.on2cook.com/book-a-demo"
+      "buttonUrl": "https://www.on2cook.com/#book_a_demo"
     },
     "siteUrl": "https://on2cook.com",
     "tagline": "World's **FASTEST** Cooking Device",
     "contact": {
-      "email": "hello@on2cook.com",
-      "phone": "+91 98765 43210",
-      "location": "Mumbai, India"
+      "email": "sales@on2cook.com",
+      "phone": "#ERROR!",
+      "location": "Ahmedabad, India"
     },
     "socialLinks": [
       {
