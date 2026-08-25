@@ -3,26 +3,22 @@
     "pageTitle": "Case studies",
     "pageTitleHighlight": "studies",
     "pageSubtitle": "Real kitchens. Real results. See how businesses are transforming their operations and growing with {brand}.",
-    "brand": "on2cook",
+    "brand": "On2Cook",
     "ctaBand": {
       "titlePlain": "Ready to write your",
       "titleItalic": "success story?",
       "subtitle": "Join 1000+ businesses transforming their kitchens with on2cook.",
       "buttonText": "Book a Demo",
-      "buttonUrl": "https://on2cook.com/#book_a_demo"
+      "buttonUrl": "https://www.on2cook.com/#book_a_demo"
     },
     "siteUrl": "https://on2cook.com",
     "tagline": "World's **FASTEST** Cooking Device",
     "contact": {
-      "email": "hello@on2cook.com",
-      "phone": "+91 98765 43210",
-      "location": "Mumbai, India"
+      "email": "sales@on2cook.com",
+      "phone": "+91 90999 40020",
+      "location": "Ahmedabad, India"
     },
     "socialLinks": [
-      {
-        "platform": "linkedin",
-        "url": "https://www.linkedin.com/company/on2cook"
-      },
       {
         "platform": "facebook",
         "url": "https://www.facebook.com/on2cook"
@@ -30,6 +26,10 @@
       {
         "platform": "instagram",
         "url": "https://www.instagram.com/on2cook"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://www.linkedin.com/company/on2cook"
       }
     ],
     "privacyUrl": "https://on2cook.com/privacy",
@@ -39,11 +39,13 @@
     {
       "slug": "haldiram",
       "category": "Cafe",
+      "imageSide": "left",
       "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
       "cardTitlePlain": "Improving Efficiency & Consistency for",
       "cardTitleHighlight": "a Growing Cafe Chain",
       "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
-      "imageSide": "left",
+      "cardImage": "",
+      "heroImage": "",
       "snapshot": {
         "description": "Haldiram is one of India's most beloved food brands, known for its wide range of sweets, snacks, and savory delights. With a legacy dating back to 1937, Haldiram has built a strong presence across the country, serving millions of customers with taste and trust.",
         "facts": [
@@ -121,121 +123,32 @@
       "quote": {
         "text": "",
         "author": ""
-      },
-      "cardImage": "",
-      "heroImage": ""
+      }
     },
     {
-      "slug": "cloud-kitchen-scale",
-      "category": "Cloud Kitchen",
-      "title": "How one cloud kitchen brand streamlined kitchen operations, maintained consistency, and scaled across multiple locations with on2cook.",
-      "cardTitlePlain": "Scaling a Cloud Kitchen Brand to",
-      "cardTitleHighlight": "20+ Outlets",
-      "cardExcerpt": "How one cloud kitchen brand streamlined kitchen operations, maintained consistency, and scaled across multiple locations with on2cook.",
-      "imageSide": "right",
-      "snapshot": {
-        "description": "A fast-scaling cloud kitchen brand built its business on delivery-only formats across multiple cities. As order volumes grew, the brand needed a way to replicate the same quality and speed at every new location without multiplying kitchen headcount.",
-        "facts": [
-          {
-            "label": "Industry",
-            "value": "Cloud Kitchen"
-          },
-          {
-            "label": "Locations",
-            "value": "20+ outlets"
-          },
-          {
-            "label": "Founded",
-            "value": "2019"
-          },
-          {
-            "label": "Region",
-            "value": "India"
-          }
-        ]
-      },
-      "challenge": {
-        "title": "Scaling Without Sacrificing Speed or Consistency",
-        "description": "Opening new outlets meant retraining kitchen staff from scratch every time. Recipe execution varied city to city, and peak-hour order backlogs were hurting delivery times and ratings.",
-        "points": [
-          "Recipe execution varied across new outlets",
-          "Long onboarding and training time for new kitchen staff",
-          "Order backlogs during peak hours",
-          "Rising cost of skilled kitchen labor at scale"
-        ]
-      },
-      "solution": {
-        "title": "Scaling with",
-        "titleHighlight": "on2cook",
-        "description": "on2cook standardized the cooking process across every outlet, letting new locations go live faster with consistent output from day one, regardless of the kitchen team's prior experience.",
-        "points": [
-          "Standardized recipes deployed instantly to new outlets",
-          "Faster new-outlet onboarding and staff ramp-up",
-          "Consistent output during peak-hour order spikes",
-          "Lower dependency on specialized kitchen talent"
-        ],
-        "image": ""
-      },
-      "impact": {
-        "stats": [
-          {
-            "value": "3x",
-            "label": "Faster Outlet Launch"
-          },
-          {
-            "value": "45%",
-            "label": "Fewer Order Delays"
-          },
-          {
-            "value": "20+",
-            "label": "Outlets Scaled"
-          },
-          {
-            "value": "30%",
-            "label": "Lower Labor Cost"
-          }
-        ]
-      },
-      "results": {
-        "title": "The Results",
-        "description": "on2cook gave the brand a repeatable playbook for opening and running consistent kitchens at speed.",
-        "points": [
-          "Uniform food quality across every city",
-          "Outlets operational in a fraction of the usual time",
-          "Smoother peak-hour order handling",
-          "Lower cost per outlet at scale"
-        ],
-        "image": ""
-      },
-      "quote": {
-        "text": "",
-        "author": ""
-      },
-      "cardImage": "",
-      "heroImage": ""
-    },
-    {
-      "slug": "qsr-roi",
+      "slug": "tazatable",
       "category": "QSR",
-      "title": "How a leading QSR brand reduced order turnaround time, increased kitchen productivity, and achieved higher ROI with on2cook.",
-      "cardTitlePlain": "Driving Faster Service & Higher",
-      "cardTitleHighlight": "ROI for a QSR Brand",
-      "cardExcerpt": "How a leading QSR brand reduced order turnaround time, increased kitchen productivity, and achieved higher ROI with on2cook.",
       "imageSide": "left",
+      "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
+      "cardTitlePlain": "Improving Efficiency & Consistency for",
+      "cardTitleHighlight": "a Growing Cafe Chain",
+      "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
+      "cardImage": "",
+      "heroImage": "",
       "snapshot": {
-        "description": "A leading quick-service restaurant brand needed to cut order turnaround time during rush hours while keeping food quality and margins intact across a growing store network.",
+        "description": "Haldiram is one of India's most beloved food brands, known for its wide range of sweets, snacks, and savory delights. With a legacy dating back to 1937, Haldiram has built a strong presence across the country, serving millions of customers with taste and trust.",
         "facts": [
           {
             "label": "Industry",
-            "value": "QSR"
+            "value": "QSR / Sweets & Snacks"
           },
           {
             "label": "Locations",
-            "value": "80+ outlets"
+            "value": "150+ outlets"
           },
           {
             "label": "Founded",
-            "value": "2011"
+            "value": "1937"
           },
           {
             "label": "Region",
@@ -244,153 +157,62 @@
         ]
       },
       "challenge": {
-        "title": "Slow Turnaround Was Costing Orders & Margins",
-        "description": "Rush-hour queues built up as kitchen staff struggled to keep pace with order volume. Overcooking and undercooking led to food wastage, directly eating into store-level profitability.",
+        "title": "Inconsistent Quality, High Manual Effort & Longer Preparation Time",
+        "description": "With a wide variety of menu items and high footfall across outlets, Haldiram's faced challenges in maintaining consistent taste and quality. Manual cooking processes led to longer preparation times, higher dependency on skilled staff, and operational inefficiencies.",
         "points": [
-          "Long order turnaround time during peak hours",
-          "Inconsistent cook times causing food wastage",
-          "Kitchen staff burnout during rush periods",
-          "Margins squeezed by rising wastage and labor costs"
+          "Inconsistent taste and quality across outlets",
+          "High manual effort and dependency on skilled staff",
+          "Longer cooking times affecting order turnaround",
+          "Higher food wastage and operational costs"
         ]
       },
       "solution": {
-        "title": "Boosting ROI with",
+        "title": "Switching to",
         "titleHighlight": "on2cook",
-        "description": "on2cook's automated cooking cut manual steps out of the line, letting staff focus on speed and service while every order came out cooked exactly to spec.",
+        "description": "Haldiram's partnered with on2cook to bring automation and precision to their kitchens. With standardized recipes, intelligent cooking, and consistent execution, on2cook helped streamline operations across all outlets.",
         "points": [
-          "Automated cooking cycles cut turnaround time",
-          "Precise cook times reduced overcooking wastage",
-          "Lighter workload on kitchen staff during rush hours",
-          "Higher throughput per shift, same headcount"
+          "Standardized recipes & automated cooking",
+          "Reduced dependency on skilled staff",
+          "Faster cooking with consistent quality",
+          "Better control on costs & wastage"
         ],
         "image": ""
       },
       "impact": {
         "stats": [
           {
-            "value": "50%",
-            "label": "Faster Turnaround"
+            "value": "60%",
+            "label": "Faster Prep"
           },
           {
-            "value": "30%",
+            "value": "35%",
             "label": "Less Food Waste"
           },
           {
-            "value": "25%",
-            "label": "Higher ROI"
-          },
-          {
             "value": "2x",
-            "label": "Peak-Hour Throughput"
-          }
-        ]
-      },
-      "results": {
-        "title": "The Results",
-        "description": "on2cook helped the brand serve more customers, faster, without compromising on taste or margins.",
-        "points": [
-          "Shorter queues and faster order handoff",
-          "Consistent food quality at every outlet",
-          "Reduced staff fatigue during rush hours",
-          "Stronger unit-level profitability"
-        ],
-        "image": ""
-      },
-      "quote": {
-        "text": "",
-        "author": ""
-      },
-      "cardImage": "",
-      "heroImage": ""
-    },
-    {
-      "slug": "restaurant-guest-experience",
-      "category": "Restaurant",
-      "title": "How a renowned restaurant improved kitchen efficiency, maintained food quality, and elevated guest satisfaction with on2cook.",
-      "cardTitlePlain": "Enhancing Guest Experience & Kitchen",
-      "cardTitleHighlight": "Efficiency",
-      "cardExcerpt": "How a renowned restaurant improved kitchen efficiency, maintained food quality, and elevated guest satisfaction with on2cook.",
-      "imageSide": "right",
-      "snapshot": {
-        "description": "A well-known sit-down restaurant wanted to raise the consistency of its signature dishes while easing pressure on its kitchen team during busy dinner service.",
-        "facts": [
-          {
-            "label": "Industry",
-            "value": "Restaurant"
+            "label": "Outlet Throughput"
           },
-          {
-            "label": "Locations",
-            "value": "12 outlets"
-          },
-          {
-            "label": "Founded",
-            "value": "2005"
-          },
-          {
-            "label": "Region",
-            "value": "India"
-          }
-        ]
-      },
-      "challenge": {
-        "title": "Dinner Rush Was Straining Kitchen & Guest Experience",
-        "description": "Signature dishes tasted slightly different depending on which chef was on shift, and long ticket times during dinner rush were affecting table turnover and guest satisfaction.",
-        "points": [
-          "Dish quality varied by chef and shift",
-          "Long ticket times during dinner rush",
-          "Table turnover slowed during peak hours",
-          "Guest satisfaction scores under pressure"
-        ]
-      },
-      "solution": {
-        "title": "Elevating Experience with",
-        "titleHighlight": "on2cook",
-        "description": "on2cook locked in the exact recipe and cook profile for every signature dish, so guests got the same experience on every visit, however busy the kitchen.",
-        "points": [
-          "Signature dishes cooked to the same profile, every time",
-          "Faster ticket times during dinner rush",
-          "Improved table turnover during peak hours",
-          "More consistent guest satisfaction scores"
-        ],
-        "image": ""
-      },
-      "impact": {
-        "stats": [
           {
             "value": "40%",
-            "label": "Faster Ticket Times"
-          },
-          {
-            "value": "25%",
-            "label": "Better Table Turnover"
-          },
-          {
-            "value": "95%",
-            "label": "Recipe Consistency"
-          },
-          {
-            "value": "30%",
-            "label": "Higher Guest Satisfaction"
+            "label": "Higher Customer Satisfaction"
           }
         ]
       },
       "results": {
         "title": "The Results",
-        "description": "on2cook helped the restaurant deliver its signature experience consistently, even on the busiest nights.",
+        "description": "On2cook delivered tangible outcomes that strengthened operations and customer experience.",
         "points": [
-          "Consistent flavor across every signature dish",
-          "Faster, smoother dinner service",
-          "Better table turnover during peak hours",
-          "Stronger guest reviews and repeat visits"
+          "Consistent taste and quality across all outlets",
+          "Faster service and reduced wait times",
+          "Lower operational costs and food waste",
+          "Happier customers and higher retention"
         ],
         "image": ""
       },
       "quote": {
         "text": "",
         "author": ""
-      },
-      "cardImage": "",
-      "heroImage": ""
+      }
     }
   ]
 }
