@@ -213,6 +213,95 @@
         "text": "",
         "author": ""
       }
+    },
+    {
+      "slug": "Wow Momo",
+      "category": "Cloud Kitchen",
+      "imageSide": "left",
+      "title": "How Wow Momo scaled operations and delighted more customers with On2Cook.",
+      "cardTitlePlain": "Improving Consistency for",
+      "cardTitleHighlight": "a Growing Cloud Kitchen Chain",
+      "cardExcerpt": "How a fast-growing momo chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
+      "cardImage": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "heroImage": "https://marinamallchennai.com/wp-content/uploads/2020/08/rsz_elv02242-min.jpg",
+      "snapshot": {
+        "description": "Tazatable is a modern food destination serving customers in the fast-growing GIFT City ecosystem, catering to a demanding audience with a focus on taste, speed, and convenience. With high customer footfall and the need for quick, consistent food preparation, Tazatable continuously looks for ways to improve kitchen efficiency and service quality.",
+        "facts": [
+          {
+            "label": "Industry",
+            "value": ""
+          },
+          {
+            "label": "Locations",
+            "value": ""
+          },
+          {
+            "label": "Founded",
+            "value": ""
+          },
+          {
+            "label": "Region",
+            "value": ""
+          }
+        ]
+      },
+      "challenge": {
+        "title": "Inconsistent Quality, High Manual Effort & Longer Preparation Time",
+        "description": "With a wide variety of menu items and high footfall across outlets, Haldiram's faced challenges in maintaining consistent taste and quality. Manual cooking processes led to longer preparation times, higher dependency on skilled staff, and operational inefficiencies.",
+        "points": [
+          "Inconsistent taste and quality across outlets",
+          "High manual effort and dependency on skilled staff",
+          "Longer cooking times affecting order turnaround",
+          "Higher food wastage and operational costs"
+        ]
+      },
+      "solution": {
+        "title": "Switching to",
+        "titleHighlight": "on2cook",
+        "description": "Haldiram's partnered with on2cook to bring automation and precision to their kitchens. With standardized recipes, intelligent cooking, and consistent execution, on2cook helped streamline operations across all outlets.",
+        "points": [
+          "Standardized recipes & automated cooking",
+          "Reduced dependency on skilled staff",
+          "Faster cooking with consistent quality",
+          "Better control on costs & wastage"
+        ],
+        "image": ""
+      },
+      "impact": {
+        "stats": [
+          {
+            "value": "60%",
+            "label": "Faster Prep"
+          },
+          {
+            "value": "35%",
+            "label": "Less Food Waste"
+          },
+          {
+            "value": "2x",
+            "label": "Outlet Throughput"
+          },
+          {
+            "value": "40%",
+            "label": "Higher Customer Satisfaction"
+          }
+        ]
+      },
+      "results": {
+        "title": "The Results",
+        "description": "On2cook delivered tangible outcomes that strengthened operations and customer experience.",
+        "points": [
+          "Consistent taste and quality across all outlets",
+          "Faster service and reduced wait times",
+          "Lower operational costs and food waste",
+          "Happier customers and higher retention"
+        ],
+        "image": ""
+      },
+      "quote": {
+        "text": "With on2cook, WOW Momo can bring greater speed, consistency, and precision to every kitchen—helping teams serve more customers without compromising on the taste people love.",
+        "author": "WOW Momo × on2cook"
+      }
     }
   ]
 }
