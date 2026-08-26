@@ -133,22 +133,22 @@
       "cardTitlePlain": "Improving Efficiency & Consistency for",
       "cardTitleHighlight": "a Growing Cafe Chain",
       "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
-      "cardImage": "",
-      "heroImage": "",
+      "cardImage": "https://plus.unsplash.com/premium_photo-1663089316730-3f5b393f6bc0?q=80&w=1261&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "heroImage": "https://images.unsplash.com/photo-1775879985138-c93adabbd598?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "snapshot": {
-        "description": "Haldiram is one of India's most beloved food brands, known for its wide range of sweets, snacks, and savory delights. With a legacy dating back to 1937, Haldiram has built a strong presence across the country, serving millions of customers with taste and trust.",
+        "description": "Tazatable is a modern food destination serving customers in the fast-growing GIFT City ecosystem, catering to a demanding audience with a focus on taste, speed, and convenience. With high customer footfall and the need for quick, consistent food preparation, Tazatable continuously looks for ways to improve kitchen efficiency and service quality.",
         "facts": [
           {
             "label": "Industry",
-            "value": "QSR / Sweets & Snacks"
+            "value": "QSR / Restaurant & Food Service"
           },
           {
             "label": "Locations",
-            "value": "150+ outlets"
+            "value": "1 outlet"
           },
           {
             "label": "Founded",
-            "value": "1937"
+            "value": "2026"
           },
           {
             "label": "Region",
