@@ -656,12 +656,14 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: clamp(30px, min(6.4vw, 6.4vh), 72px);
   font-weight: 800;
   color: var(--black);
-  max-width: 16ch;
+  /* Widen the title so longer headlines can span more of the hero area */
+  max-width: 72ch;
   margin: 0 auto;
 }
 .d-hero__sub {
   margin: clamp(10px, 1.8vh, 18px) auto 0;
-  max-width: 60ch;
+  /* Allow the description to run wider for better readability in the hero */
+  max-width: 80ch;
   font-size: 16.5px;
   color: var(--ink-60);
 }
@@ -676,11 +678,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: block;
   border-radius: var(--radius-lg);
   width: 100%;
-  /* A normal hero-banner ratio (~2.15:1) instead of a raw vh-based
-     height — that math could squash this into an ultra-wide sliver
-     on typical viewports. max-height is just a safety cap for very
-     short viewports so the "one view" fold requirement still holds. */
-  aspect-ratio: 2.15 / 1;
+  /* Slightly wider hero-banner ratio (~2.7:1) for a more expansive
+     presentation of hero images on detail pages. max-height remains
+     a safety cap for very short viewports so the "one view" fold
+     requirement still holds. */
+  aspect-ratio: 2.7 / 1;
   height: auto;
   min-height: 0;
   max-height: clamp(240px, 40vh, 480px);
