@@ -653,11 +653,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   margin-bottom: clamp(12px, 2.2vh, 22px);
 }
 .d-hero h1 {
-  font-size: clamp(30px, min(6.4vw, 6.4vh), 72px);
+  font-size: clamp(50px, min(6.4vw, 6.4vh), 72px);
   font-weight: 800;
   color: var(--black);
   /* Widen the title so longer headlines can span more of the hero area */
-  max-width: 72ch;
+  max-width: 25ch;
   margin: 0 auto;
 }
 .d-hero__sub {
