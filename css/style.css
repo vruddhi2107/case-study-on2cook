@@ -668,28 +668,36 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--ink-60);
 }
 
-.d-hero__media {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-}
-.d-hero__media .ph,
-.d-hero__media img {
-  display: block;
-  border-radius: var(--radius-lg);
-  width: 100%;
-  /* Slightly wider hero-banner ratio (~2.7:1) for a more expansive
-     presentation of hero images on detail pages. max-height remains
-     a safety cap for very short viewports so the "one view" fold
-     requirement still holds. */
-  aspect-ratio: 2.7 / 1;
-  height: auto;
-  min-height: 0;
-  max-height: clamp(240px, 40vh, 480px);
-  object-fit: cover;
-  object-position: center;
-}
+/* ==========================================================================
+   Detail page hero image (centered & aligned with snapshot section)
+   ========================================================================== */
+/* ==========================================================================
+   Hero Media Section (Centrally Aligned & Increased Height)
+   ========================================================================== */
+  .d-hero__media {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
+  .d-hero__media .ph,
+  .d-hero__media img {
+    display: block;
+    border-radius: var(--radius-lg);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    /* Increased aspect ratio & height constraints for extra vertical presence */
+    aspect-ratio: 16 / 10;
+    height: auto;
+    min-height: 0;
+    max-height: clamp(400px, 60vh, 740px);
+    object-fit: cover;
+    object-position: center;
+  }
 /* Snapshot */
 .snapshot {
   max-width: var(--container);
