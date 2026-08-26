@@ -37,113 +37,29 @@
   },
   "caseStudies": [
     {
-      "slug": "Chef N Dish",
-      "category": "Cloud Kitchen",
+      "slug": "haldiram",
+      "category": "Cafe",
       "imageSide": "left",
-      "title": "",
-      "cardTitlePlain": "Saving ₹11–12K a Month across",
-      "cardTitleHighlight": "250+ Daily Orders",
-      "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
-      "cardImage": "",
-      "heroImage": "",
-      "snapshot": {
-        "description": "Chef N Dish (Kabulee Kitchen) runs a high-volume cloud kitchen out of Jaipur, serving North Indian gravies, Chinese, and desserts. Handling 200-250 orders a day, the kitchen needed a way to keep up without rising costs or inconsistent results.",
-        "facts": [
-          {
-            "label": "Industry",
-            "value": "Cloud Kitchen"
-          },
-          {
-            "label": "Locations",
-            "value": "3 Devices"
-          },
-          {
-            "label": "Founded",
-            "value": "200-250 Orders per day"
-          },
-          {
-            "label": "Region",
-            "value": "Jaipur, India"
-          }
-        ]
-      },
-      "challenge": {
-        "title": "High LPG Dependency Slowing Down a Growing Kitchen",
-        "description": "Keeping up with daily demand meant relying on 5-6 LPG cylinders every month. As the kitchen got busier, costs kept climbing — and so did the pressure on cooks to keep every dish consistent.",
-        "points": [
-          "High monthly cost from 5-6 LPG cylinders",
-          "Taste consistency dependent on skilled cooks",
-          "Food wastage adding to daily costs",
-          "More kitchen staff needed to manage volume"
-        ]
-      },
-      "solution": {
-        "title": "Switching to",
-        "titleHighlight": "on2cook",
-        "description": "Chef N Dish brought in 3 On2Cook units to replace LPG-based cooking. With standardized, induction-powered cooking, the kitchen could run leaner without compromising on taste.",
-        "points": [
-          "Replaced LPG cylinders with induction-based cooking",
-          "Ran the entire kitchen with just 2 cooks",
-          "Cooked exact quantities needed, cutting waste",
-          "Delivered consistent taste across every batch"
-        ],
-        "image": ""
-      },
-      "impact": {
-        "stats": [
-          {
-            "value": "₹11–12K",
-            "label": "Monthly Savings"
-          },
-          {
-            "value": "80%",
-            "label": "Less Kitchen Time"
-          },
-          {
-            "value": "2",
-            "label": "Cooks Needed"
-          },
-          {
-            "value": "0",
-            "label": "LPG Usage"
-          }
-        ]
-      },
-      "results": {
-        "title": "The Results",
-        "description": "With on2cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
-        "points": [],
-        "image": ""
-      },
-      "quote": {
-        "text": "",
-        "author": ""
-      }
-    },
-    {
-      "slug": "tazatable",
-      "category": "QSR",
-      "imageSide": "right",
       "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
       "cardTitlePlain": "Improving Efficiency & Consistency for",
       "cardTitleHighlight": "a Growing Cafe Chain",
       "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
-      "cardImage": "https://plus.unsplash.com/premium_photo-1663089316730-3f5b393f6bc0?q=80&w=1261&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "heroImage": "https://images.unsplash.com/photo-1775879985138-c93adabbd598?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardImage": "",
+      "heroImage": "",
       "snapshot": {
-        "description": "Tazatable is a modern food destination serving customers in the fast-growing GIFT City ecosystem, catering to a demanding audience with a focus on taste, speed, and convenience. With high customer footfall and the need for quick, consistent food preparation, Tazatable continuously looks for ways to improve kitchen efficiency and service quality.",
+        "description": "Haldiram is one of India's most beloved food brands, known for its wide range of sweets, snacks, and savory delights. With a legacy dating back to 1937, Haldiram has built a strong presence across the country, serving millions of customers with taste and trust.",
         "facts": [
           {
             "label": "Industry",
-            "value": "QSR / Restaurant & Food Service"
+            "value": "QSR / Sweets & Snacks"
           },
           {
             "label": "Locations",
-            "value": "1 outlet"
+            "value": "150+ outlets"
           },
           {
             "label": "Founded",
-            "value": "2026"
+            "value": "1937"
           },
           {
             "label": "Region",
@@ -211,33 +127,33 @@
       "ctas": []
     },
     {
-      "slug": "Wow Momo",
-      "category": "Cloud Kitchen",
-      "imageSide": "left",
-      "title": "How Wow Momo scaled operations and delighted more customers with On2Cook.",
-      "cardTitlePlain": "Improving Consistency for",
-      "cardTitleHighlight": "a Growing Cloud Kitchen Chain",
-      "cardExcerpt": "How a fast-growing momo chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
-      "cardImage": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "heroImage": "https://marinamallchennai.com/wp-content/uploads/2020/08/rsz_elv02242-min.jpg",
+      "slug": "tazatable",
+      "category": "QSR",
+      "imageSide": "right",
+      "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
+      "cardTitlePlain": "Improving Efficiency & Consistency for",
+      "cardTitleHighlight": "a Growing Cafe Chain",
+      "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
+      "cardImage": "",
+      "heroImage": "",
       "snapshot": {
-        "description": "Tazatable is a modern food destination serving customers in the fast-growing GIFT City ecosystem, catering to a demanding audience with a focus on taste, speed, and convenience. With high customer footfall and the need for quick, consistent food preparation, Tazatable continuously looks for ways to improve kitchen efficiency and service quality.",
+        "description": "Haldiram is one of India's most beloved food brands, known for its wide range of sweets, snacks, and savory delights. With a legacy dating back to 1937, Haldiram has built a strong presence across the country, serving millions of customers with taste and trust.",
         "facts": [
           {
             "label": "Industry",
-            "value": ""
+            "value": "QSR / Sweets & Snacks"
           },
           {
             "label": "Locations",
-            "value": ""
+            "value": "150+ outlets"
           },
           {
             "label": "Founded",
-            "value": ""
+            "value": "1937"
           },
           {
             "label": "Region",
-            "value": ""
+            "value": "India"
           }
         ]
       },
@@ -295,7 +211,6 @@
         "image": ""
       },
       "quote": {
-<<<<<<< HEAD
         "text": "",
         "author": ""
       },
@@ -318,8 +233,8 @@
       "cardTitlePlain": "Saving ₹11–12K a Month across",
       "cardTitleHighlight": "250+ Daily Orders",
       "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
-      "cardImage": "",
-      "heroImage": "",
+      "cardImage": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "heroImage": "https://images.unsplash.com/photo-1758578484459-677bfbbd00f7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "snapshot": {
         "description": "Chef N Dish (Kabulee Kitchen) runs a high-volume cloud kitchen out of Jaipur, serving North Indian gravies, Chinese, and desserts. Handling 200-250 orders a day, the kitchen needed a way to keep up without rising costs or inconsistent results.",
         "facts": [
@@ -393,12 +308,12 @@
         "text": "",
         "author": ""
       },
-      "ctas": []
-=======
-        "text": "With on2cook, WOW Momo can bring greater speed, consistency, and precision to every kitchen—helping teams serve more customers without compromising on the taste people love.",
-        "author": "WOW Momo × on2cook"
-      }
->>>>>>> 23648ff4620a9907a6c8dd61fddc91ff14b57e08
+      "ctas": [
+        {
+          "text": "Ready to run a leaner kitchen?",
+          "url": "https://www.on2cook.com/#book_a_demo"
+        }
+      ]
     }
   ]
 }
