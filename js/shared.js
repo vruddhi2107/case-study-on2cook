@@ -130,6 +130,12 @@ function sheetRowToCaseStudy(row) {
     const label = g(`stat${i}_label`);
     if (value || label) stats.push({ value, label });
   }
+  const ctas = [];
+  for (let i = 1; i <= 4; i++) {
+    const text = g(`cta${i}_text`);
+    const url = g(`cta${i}_url`);
+    if (text || url) ctas.push({ text, url });
+  }
   return {
     slug: g("slug"),
     category: g("category"),
@@ -143,10 +149,10 @@ function sheetRowToCaseStudy(row) {
     snapshot: {
       description: g("snapshot_description"),
       facts: [
-        { label: "Industry", value: g("snapshot_industry") },
-        { label: "Locations", value: g("snapshot_locations") },
-        { label: "Founded", value: g("snapshot_founded") },
-        { label: "Region", value: g("snapshot_region") },
+        { label: g("snapshot_industry_label", "Industry"), value: g("snapshot_industry") },
+        { label: g("snapshot_locations_label", "Locations"), value: g("snapshot_locations") },
+        { label: g("snapshot_founded_label", "Founded"), value: g("snapshot_founded") },
+        { label: g("snapshot_region_label", "Region"), value: g("snapshot_region") },
       ],
     },
     challenge: {
@@ -169,6 +175,7 @@ function sheetRowToCaseStudy(row) {
       image: g("results_image"),
     },
     quote: { text: g("quote_text"), author: g("quote_author") },
+    ctas,
   };
 }
 
@@ -293,17 +300,31 @@ function initScrollReveal(selector = ".reveal, .card") {
   }, 2500);
 }
 
-/** Render the shared CTA band using meta.ctaBand from the JSON. */
-function renderCtaBand(meta) {
+/** Render the shared CTA band using meta.ctaBand from the JSON.
+ *
+ *  ctas (optional): an array of { text, url } to render instead of the
+ *  single site-wide button — this is how a case study's own cta1..cta4
+ *  columns (see sheetRowToCaseStudy) override the default CTA on its
+ *  detail page. Pass 1 to 4 of them; the first renders as the solid
+ *  button, any further ones render as outline buttons alongside it.
+ *  Omit / pass an empty array to fall back to meta.ctaBand as before. */
+function renderCtaBand(meta, ctas) {
   const c = meta.ctaBand || {};
+  const buttons = (ctas && ctas.length)
+    ? ctas
+    : [{ text: c.buttonText || "Book a Demo", url: c.buttonUrl || "https://on2cook.com/#book_a_demo" }];
+
   return `
     <section class="cta-band">
       <div class="cta-band__inner">
         <h2>${escapeHtml(c.titlePlain || "Ready to write your")} <i>${escapeHtml(c.titleItalic || "success story?")}</i></h2>
         <p>${escapeHtml(c.subtitle || "")}</p>
-        <a class="btn btn--white" href="${escapeAttr(c.buttonUrl || "https://on2cook.com/#book_a_demo")}">
-          ${escapeHtml(c.buttonText || "Book a Demo")} ${iconArrow()}
-        </a>
+        <div class="cta-band__buttons">
+          ${buttons.map((b, i) => `
+          <a class="btn ${i === 0 ? "btn--white" : "btn--outline-white"}" href="${escapeAttr(b.url || "https://on2cook.com/#book_a_demo")}">
+            ${escapeHtml(b.text || "Book a Demo")} ${iconArrow()}
+          </a>`).join("")}
+        </div>
       </div>
     </section>`;
 }
@@ -317,6 +338,21 @@ function renderCtaBand(meta) {
 function setYear() {
   const el = document.getElementById("year");
   if (el) el.textContent = new Date().getFullYear();
+}
+
+/** Measures the real floating navbar height (it varies slightly by
+ *  content/viewport) and writes it to --nav-h so anything sizing itself
+ *  against "the space below the nav" (e.g. .d-hero-fold) stays accurate
+ *  instead of relying on the CSS fallback guess. Re-measures on resize. */
+function syncNavHeightVar() {
+  const nav = document.querySelector(".nav");
+  if (!nav) return;
+  const set = () => {
+    const h = nav.getBoundingClientRect().height;
+    if (h) document.documentElement.style.setProperty("--nav-h", `${Math.ceil(h)}px`);
+  };
+  set();
+  window.addEventListener("resize", set);
 }
 
 /* ---- Social icon paths, keyed by lowercase platform name ---- */

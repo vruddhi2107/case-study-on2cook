@@ -12,6 +12,8 @@
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("slug");
 
+  syncNavHeightVar();
+
   try {
     const data = await loadCaseStudyData();
     const meta = data.meta || {};
@@ -25,7 +27,7 @@
     crumbCurrent.textContent = `${cs.cardTitlePlain} ${cs.cardTitleHighlight}`.trim();
 
     root.innerHTML = detailMarkup(cs);
-    ctaSlot.innerHTML = renderCtaBand(meta);
+    ctaSlot.innerHTML = renderCtaBand(meta, cs.ctas);
     renderPageNav(items, index);
     renderChrome(meta);
 
@@ -64,13 +66,15 @@
     const resMedia = mediaMarkup(res.image, res.title, "Results");
 
     return `
-      <section class="d-hero">
-        <span class="pill">${escapeHtml(cs.category || "")}</span>
-        <h1 class="reveal is-visible">${escapeHtml(`${cs.cardTitlePlain || ""} ${cs.cardTitleHighlight || ""}`.trim())}</h1>
-        <p class="d-hero__sub">${escapeHtml(cs.title || "")}</p>
-      </section>
+      <div class="d-hero-fold">
+        <section class="d-hero">
+          <span class="pill">${escapeHtml(cs.category || "")}</span>
+          <h1 class="reveal is-visible">${escapeHtml(`${cs.cardTitlePlain || ""} ${cs.cardTitleHighlight || ""}`.trim())}</h1>
+          <p class="d-hero__sub">${escapeHtml(cs.title || "")}</p>
+        </section>
 
-      ${heroMedia ? `<div class="d-hero__media reveal">${heroMedia}</div>` : ""}
+        ${heroMedia ? `<div class="d-hero__media reveal">${heroMedia}</div>` : ""}
+      </div>
 
       ${hasSnapshot ? `
       <section class="snapshot reveal">

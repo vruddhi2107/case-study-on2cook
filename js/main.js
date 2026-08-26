@@ -8,6 +8,8 @@
   const list = document.getElementById("caseStudyList");
   const ctaSlot = document.getElementById("ctaSlot");
 
+  syncNavHeightVar();
+
   try {
     const data = await loadCaseStudyData();
     const meta = data.meta || {};

@@ -104,6 +104,11 @@
   --gutter: clamp(20px, 5vw, 64px);
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Actual nav height is measured in JS (syncNavHeightVar) and written
+     here so the hero fold below it can size against the real value —
+     this is just the pre-JS fallback so there's no flash/jump. */
+  --nav-h: 86px;
 }
 
 * { box-sizing: border-box; }
@@ -156,18 +161,31 @@ ul { margin: 0; padding: 0; list-style: none; }
    ========================================================================== */
 .nav {
   position: sticky;
-  top: 0;
+  top: clamp(12px, 2.4vw, 20px);
   z-index: 50;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 1px solid var(--ink-08);
+  width: calc(100% - clamp(24px, 6vw, 64px));
+  max-width: calc(var(--container) + 40px);
+  margin: clamp(12px, 2.4vw, 20px) auto 0;
+  border-radius: var(--radius-pill);
+
+  /* Glassmorphism: translucent frosted panel that floats above the
+     page and lets content blur through, with a soft edge highlight
+     and drop shadow so it reads as a distinct raised layer. */
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.10),
+    0 1px 1px rgba(0, 0, 0, 0.03),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  transition: background 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
 .nav__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px var(--gutter);
+  padding: 12px 12px 12px 22px;
   max-width: var(--container);
   margin: 0 auto;
 }
@@ -435,6 +453,24 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .cta-band .btn { position: relative; }
 
+/* Supports 1–4 CTA buttons per case study (see cs.ctas / cta1_text.. in
+   the sheet) — the first is the solid white button, any extra ones
+   render as outline buttons alongside it. Wraps on narrow screens. */
+.cta-band__buttons {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.btn--outline-white {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+}
+.btn--outline-white:hover { background: rgba(255, 255, 255, 0.15); border-color: var(--white); }
+
 /* ==========================================================================
    Footer — matches the on2cook.com production footer reference
    ========================================================================== */
@@ -573,10 +609,25 @@ ul { margin: 0; padding: 0; list-style: none; }
 .breadcrumb a:hover { color: var(--red); }
 .breadcrumb .current { color: var(--red); font-weight: 600; }
 
+/* Wraps the title/subtitle block + hero image together and sizes the
+   pair to the viewport space left under the floating nav, so the pill,
+   title, subtitle and hero image are all visible without scrolling on
+   first load — see requirement "hero in one view". Falls back to its
+   natural (taller-than-viewport-safe) height on very short viewports
+   via min-height rather than a hard cap, so nothing ever gets clipped. */
+.d-hero-fold {
+  min-height: calc(100vh - var(--nav-h)); /* fallback for browsers without dvh */
+  min-height: calc(100dvh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(18px, 3.4vh, 36px);
+  padding-bottom: clamp(16px, 3vh, 32px);
+}
 .d-hero {
   max-width: var(--container);
   margin: 0 auto;
-  padding: 24px var(--gutter) 0;
+  padding: clamp(10px, 2vh, 24px) var(--gutter) 0;
   text-align: center;
 }
 .pill {
@@ -590,17 +641,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   text-transform: uppercase;
   padding: 8px 20px;
   border-radius: var(--radius-pill);
-  margin-bottom: 22px;
+  margin-bottom: clamp(12px, 2.2vh, 22px);
 }
 .d-hero h1 {
-  font-size: clamp(38px, 6.4vw, 72px);
+  font-size: clamp(30px, min(6.4vw, 6.4vh), 72px);
   font-weight: 800;
   color: var(--black);
   max-width: 16ch;
   margin: 0 auto;
 }
 .d-hero__sub {
-  margin: 18px auto 0;
+  margin: clamp(10px, 1.8vh, 18px) auto 0;
   max-width: 60ch;
   font-size: 16.5px;
   color: var(--ink-60);
@@ -608,15 +659,20 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .d-hero__media {
   max-width: var(--container);
-  margin: 40px auto 0;
+  margin: 0 auto;
   padding: 0 var(--gutter);
 }
 .d-hero__media .ph,
 .d-hero__media img {
+  display: block;
   border-radius: var(--radius-lg);
-  height: clamp(240px, 42vw, 460px);
-  object-fit: cover;
   width: 100%;
+  aspect-ratio: 2.15 / 1;       /* normal hero-banner proportions */
+  height: auto;
+  min-height: 0;
+  max-height: clamp(240px, 40vh, 480px);  /* safety cap for short screens */
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Snapshot */
@@ -633,7 +689,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .snapshot p {
   color: var(--ink-60);
   font-size: 15.5px;
-  max-width: 78ch;
+  /* Runs the full section width (same max-width + padding as
+     .d-hero__media above it) instead of being capped to a narrow
+     reading measure. */
+  max-width: 100%;
   margin-bottom: 28px;
 }
 .facts {

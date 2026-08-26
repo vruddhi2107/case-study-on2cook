@@ -34,13 +34,26 @@ Sheet columns (one row per case study — see README.md for the full guide):
     cardTitlePlain, cardTitleHighlight, cardExcerpt, cardImage, heroImage,
     snapshot_description, snapshot_industry, snapshot_locations,
     snapshot_founded, snapshot_region,
+    snapshot_industry_label, snapshot_locations_label,
+    snapshot_founded_label, snapshot_region_label,
     challenge_title, challenge_description, challenge_points,
     solution_title, solution_titleHighlight, solution_description,
     solution_points, solution_image,
     stat1_value, stat1_label, stat2_value, stat2_label,
     stat3_value, stat3_label, stat4_value, stat4_label,
     results_title, results_description, results_points, results_image,
-    quote_text, quote_author
+    quote_text, quote_author,
+    cta1_text, cta1_url, cta2_text, cta2_url,
+    cta3_text, cta3_url, cta4_text, cta4_url
+
+CTA columns (optional, up to 4 per case study):
+    Leave all four blank -> the detail page falls back to the single
+    site-wide "Book a Demo" button from the Site Settings tab, same as
+    before. Fill in cta1_text/cta1_url (and, optionally, cta2../cta3../
+    cta4..) -> the bottom CTA band on THAT case study's page shows those
+    buttons instead — cta1 renders solid, cta2-4 render as outline
+    buttons next to it. Each pair is independent, e.g. you can set only
+    cta1 and cta2 and leave cta3/cta4 blank.
 
 Multi-line list fields (challenge_points, solution_points, results_points)
 use "|" as the separator between bullet points, e.g.:
@@ -54,6 +67,15 @@ Skipping content (see README.md section 4 for the full explanation):
       "photo pending").
     - Type "none" (or "skip") in an image cell -> no placeholder either;
       that section's text runs full-width instead.
+
+Client Snapshot fact labels (optional overrides):
+    The four snapshot facts default to the labels "Industry", "Locations",
+    "Founded", "Region". Leave *_label blank on any of them to keep the
+    default. Fill one in to relabel that fact for THIS case study only —
+    e.g. set snapshot_locations_label to "Devices" and put a device count
+    in snapshot_locations, or set snapshot_founded_label to "Orders / Day"
+    and put a volume figure in snapshot_founded. Useful when a case study's
+    real story isn't about founding year or outlet count.
 """
 
 import csv
@@ -144,6 +166,13 @@ def row_to_case_study(row: dict) -> dict:
         if value or label:
             stats.append({"value": value, "label": label})
 
+    ctas = []
+    for i in range(1, 5):
+        text = g(f"cta{i}_text")
+        url = g(f"cta{i}_url")
+        if text or url:
+            ctas.append({"text": text, "url": url})
+
     return {
         "slug": g("slug"),
         "category": g("category"),
@@ -157,10 +186,10 @@ def row_to_case_study(row: dict) -> dict:
         "snapshot": {
             "description": g("snapshot_description"),
             "facts": [
-                {"label": "Industry", "value": g("snapshot_industry")},
-                {"label": "Locations", "value": g("snapshot_locations")},
-                {"label": "Founded", "value": g("snapshot_founded")},
-                {"label": "Region", "value": g("snapshot_region")},
+                {"label": g("snapshot_industry_label", "Industry"), "value": g("snapshot_industry")},
+                {"label": g("snapshot_locations_label", "Locations"), "value": g("snapshot_locations")},
+                {"label": g("snapshot_founded_label", "Founded"), "value": g("snapshot_founded")},
+                {"label": g("snapshot_region_label", "Region"), "value": g("snapshot_region")},
             ],
         },
         "challenge": {
@@ -186,6 +215,7 @@ def row_to_case_study(row: dict) -> dict:
             "text": g("quote_text"),
             "author": g("quote_author"),
         },
+        "ctas": ctas,
     }
 
 

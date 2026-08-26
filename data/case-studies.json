@@ -123,7 +123,8 @@
       "quote": {
         "text": "",
         "author": ""
-      }
+      },
+      "ctas": []
     },
     {
       "slug": "tazatable",
@@ -212,7 +213,102 @@
       "quote": {
         "text": "",
         "author": ""
-      }
+      },
+      "ctas": [
+        {
+          "text": "Book a Demo",
+          "url": "https://www.on2cook.com/#book_a_demo"
+        },
+        {
+          "text": "Download Case Study",
+          "url": "https://on2cook.com/"
+        }
+      ]
+    },
+    {
+      "slug": "chef-n-dish",
+      "category": "Cloud Kitchen",
+      "imageSide": "left",
+      "title": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
+      "cardTitlePlain": "Saving ₹11–12K a Month across",
+      "cardTitleHighlight": "250+ Daily Orders",
+      "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
+      "cardImage": "",
+      "heroImage": "",
+      "snapshot": {
+        "description": "Chef N Dish (Kabulee Kitchen) runs a high-volume cloud kitchen out of Jaipur, serving North Indian gravies, Chinese, and desserts. Handling 200-250 orders a day, the kitchen needed a way to keep up without rising costs or inconsistent results.",
+        "facts": [
+          {
+            "label": "Industry",
+            "value": "Cloud Kitchen"
+          },
+          {
+            "label": "Devices",
+            "value": "3 Devices"
+          },
+          {
+            "label": "Orders / Day",
+            "value": "200-250 Orders per day"
+          },
+          {
+            "label": "Region",
+            "value": "Jaipur, India"
+          }
+        ]
+      },
+      "challenge": {
+        "title": "High LPG Dependency Slowing Down a Growing Kitchen",
+        "description": "Keeping up with daily demand meant relying on 5-6 LPG cylinders every month. As the kitchen got busier, costs kept climbing — and so did the pressure on cooks to keep every dish consistent.",
+        "points": [
+          "High monthly cost from 5-6 LPG cylinders",
+          "Taste consistency dependent on skilled cooks",
+          "Food wastage adding to daily costs",
+          "More kitchen staff needed to manage volume"
+        ]
+      },
+      "solution": {
+        "title": "Switching to",
+        "titleHighlight": "on2cook",
+        "description": "Chef N Dish brought in 3 On2Cook units to replace LPG-based cooking. With standardized, induction-powered cooking, the kitchen could run leaner without compromising on taste.",
+        "points": [
+          "Replaced LPG cylinders with induction-based cooking",
+          "Ran the entire kitchen with just 2 cooks",
+          "Cooked exact quantities needed, cutting waste",
+          "Delivered consistent taste across every batch"
+        ],
+        "image": ""
+      },
+      "impact": {
+        "stats": [
+          {
+            "value": "₹11–12K",
+            "label": "Monthly Savings"
+          },
+          {
+            "value": "80%",
+            "label": "Less Kitchen Time"
+          },
+          {
+            "value": "2",
+            "label": "Cooks Needed"
+          },
+          {
+            "value": "0",
+            "label": "LPG Usage"
+          }
+        ]
+      },
+      "results": {
+        "title": "The Results",
+        "description": "With on2cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
+        "points": [],
+        "image": ""
+      },
+      "quote": {
+        "text": "",
+        "author": ""
+      },
+      "ctas": []
     }
   ]
 }
