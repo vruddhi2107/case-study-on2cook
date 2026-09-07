@@ -41,8 +41,8 @@
       "category": "Cloud Kitchen",
       "imageSide": "left",
       "title": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
-      "cardTitlePlain": "Saving ₹11–12K a Month across",
-      "cardTitleHighlight": "250+ Daily Orders",
+      "cardTitlePlain": "Cutting ₹11–12K in LPG Costs",
+      "cardTitleHighlight": "Across 250+ Daily Orders",
       "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
       "cardImage": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "heroImage": "https://images.unsplash.com/photo-1758578484459-677bfbbd00f7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -69,12 +69,12 @@
       },
       "challenge": {
         "title": "High LPG Dependency Slowing Down a Growing Kitchen",
-        "description": "Keeping up with daily demand meant relying on 5-6 LPG cylinders every month. As the kitchen got busier, costs kept climbing — and so did the pressure on cooks to keep every dish consistent.",
+        "description": "Keeping up with daily demand meant relying on 5-6 LPG cylinders every month. As the kitchen got busier, costs kept climbing — training new staff took weeks and so did the pressure on cooks to keep every dish consistent.",
         "points": [
-          "High monthly cost from 5-6 LPG cylinders",
+          "High monthly cost of ₹13,000–17,000 from 5-6 LPG cylinders",
           "Taste consistency dependent on skilled cooks",
           "Food wastage adding to daily costs",
-          "More kitchen staff needed to manage volume"
+          "6-member kitchen staff needed to manage volume"
         ]
       },
       "solution": {
@@ -84,7 +84,7 @@
         "points": [
           "Replaced LPG cylinders with induction-based cooking",
           "Ran the entire kitchen with just 2 cooks",
-          "Cooked exact quantities needed, cutting waste",
+          "Cut food wastage from 8–10% down to just 1–2%",
           "Delivered consistent taste across every batch"
         ],
         "image": ""
@@ -110,8 +110,8 @@
         ]
       },
       "results": {
-        "title": "The Results",
-        "description": "With on2cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
+        "title": "A Leaner Kitchen, With Taste Consistency",
+        "description": "With on2cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. Cooking that once took 35 minutes now takes just 12, and training a new hire has dropped from weeks to a few days — letting the kitchen run on 4 staff instead of 6 while handling 60% more orders, even through Zomato/Swiggy rush. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
         "points": [],
         "image": ""
       },
