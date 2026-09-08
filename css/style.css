@@ -719,8 +719,9 @@ ul { margin: 0; padding: 0; list-style: none; }
   margin-bottom: 28px;
 }
 .facts {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 }
 .fact {
@@ -728,6 +729,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   border: 1px solid var(--ink-08);
   border-radius: var(--radius-md);
   padding: 20px 22px;
+  /* Grow/shrink around a ~240px base so 4 sit per row on desktop, but
+     any count (1, 2, 3, 5...) wraps and centers instead of stretching
+     to fill leftover grid columns or hugging the left edge. */
+  flex: 1 1 240px;
+  max-width: 280px;
 }
 .fact__label {
   font-size: 12.5px;
@@ -830,8 +836,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .impact-grid {
   margin-top: 34px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 .stat {
@@ -839,6 +846,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   border-radius: var(--radius-md);
   padding: 30px 22px;
   text-align: center;
+  /* Same self-centering approach as .fact above — works for any number
+     of KPIs the sheet defines, not just multiples of 4. */
+  flex: 1 1 240px;
+  max-width: 280px;
 }
 .stat__value {
   font-family: var(--font-head);
@@ -953,11 +964,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   .card__media, .ph { min-height: 220px; }
   .section--split.flip { direction: ltr; }
   .section--split .card__media { order: -1; }
-  .facts, .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .fact, .stat { flex-basis: 45%; }
 }
 @media (max-width: 560px) {
   .hero { padding: 60px var(--gutter) 40px; }
   .card__content { padding: 28px; }
-  .facts, .impact-grid { grid-template-columns: 1fr 1fr; }
+  .fact, .stat { flex-basis: 100%; max-width: 100%; }
   .pagenav { flex-direction: column; }
 }
