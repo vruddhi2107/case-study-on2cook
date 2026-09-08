@@ -158,50 +158,46 @@
         ]
       },
       "challenge": {
-        "title": "High LPG Dependency Slowing Down a Growing Kitchen",
-        "description": "Keeping up with daily demand meant relying on 5-6 LPG cylinders every month. As the kitchen got busier, costs kept climbing — training new staff took weeks and so did the pressure on cooks to keep every dish consistent.",
+        "title": "Keeping a Diverse Menu Consistent, Order After Order",
+        "description": "As Urvi Analytics grew, keeping taste, colour and texture consistent across every order became harder — without depending entirely on LPG cylinders or skilled kitchen staff.",
         "points": [
-          "High monthly cost of ₹13,000–17,000 from 5-6 LPG cylinders",
-          "Taste consistency dependent on skilled cooks",
-          "Food wastage adding to daily costs",
-          "6-member kitchen staff needed to manage volume"
+          "High dependency on LPG cylinders for everyday cooking",
+          "Consistent taste, colour and aroma across a varied menu",
+          "Heavy reliance on skilled chefs for repeatable results",
+          "Food wastage adding to costs at scale"
         ]
       },
       "solution": {
-        "title": "Switching to",
-        "titleHighlight": "on2cook",
-        "description": "Chef N Dish brought in 3 On2Cook units to replace LPG-based cooking. With standardized, induction-powered cooking, the kitchen could run leaner without compromising on taste.",
+        "title": "Standardizing Taste with",
+        "titleHighlight": "On2Cook",
+        "description": "Urvi Analytics used On2Cook to cook its core menu — North Indian gravies, biryanis, Chicken Schezwan, Chinese recipes, Dal Fry, mutton and egg — with standardized, repeatable results.",
         "points": [
-          "Replaced LPG cylinders with induction-based cooking",
-          "Ran the entire kitchen with just 2 cooks",
-          "Cut food wastage from 8–10% down to just 1–2%",
-          "Delivered consistent taste across every batch"
+          "Zero dependency on LPG cylinders for everyday cooking",
+          "Consistent taste, colour and aroma across every dish",
+          "Reduced dependency on skilled kitchen staff",
+          "Less food wastage, cooking exactly what's required"
         ],
         "image": ""
       },
       "impact": {
         "stats": [
           {
-            "value": "₹11–12K",
-            "label": "Monthly Savings"
+            "value": "40 → 150",
+            "label": "Daily Order Growth"
           },
           {
-            "value": "80%",
-            "label": "Less Kitchen Time"
+            "value": "3.75X",
+            "label": "Growth Multiple"
           },
           {
-            "value": "2",
-            "label": "Cooks Needed"
-          },
-          {
-            "value": "0",
-            "label": "LPG Usage"
+            "value": "110+ Orders/Day",
+            "label": "Increase in Daily Orders"
           }
         ]
       },
       "results": {
-        "title": "A Leaner Kitchen, With Taste Consistency",
-        "description": "With on2cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. Cooking that once took 35 minutes now takes just 12, and training a new hire has dropped from weeks to a few days — letting the kitchen run on 4 staff instead of 6 while handling 60% more orders, even through Zomato/Swiggy rush. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
+        "title": "From Consistent Taste to 4X Growth",
+        "description": "Urvi Analytics began this phase of its journey at around 40 daily orders. Using On2Cook to standardize cooking across its menu, the business built a stronger foundation of consistent taste and repeatable quality.\n\nToday, Urvi Analytics handles close to 150 orders a day, nearly 4X where it started, with On2Cook helping shape the consistent food experience behind that growth.",
         "points": [],
         "image": ""
       },
