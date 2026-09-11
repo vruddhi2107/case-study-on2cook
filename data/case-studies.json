@@ -44,8 +44,8 @@
       "cardTitlePlain": "Cutting ₹11–12K in LPG Costs",
       "cardTitleHighlight": "Across 250+ Daily Orders",
       "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
-      "cardImage": "assets/cardimage",
-      "heroImage": "assets/heroimage",
+      "cardImage": "assets/cardimage.png",
+      "heroImage": "assets/heroimage.png",
       "snapshot": {
         "description": "Chef N Dish (Kabulee Kitchen) runs a high-volume cloud kitchen out of Jaipur, serving North Indian gravies, Chinese, and desserts. Handling 200-250 orders a day, the kitchen needed a way to keep up without rising costs or inconsistent results.",
         "facts": [
@@ -87,7 +87,7 @@
           "Cut food wastage from 8–10% down to just 1–2%",
           "Delivered consistent taste across every batch"
         ],
-        "image": ""
+        "image": "assets/success.png"
       },
       "impact": {
         "stats": [
