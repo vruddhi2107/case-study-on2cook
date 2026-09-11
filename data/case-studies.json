@@ -127,17 +127,17 @@
       ]
     },
     {
-      "slug": "Urvi Analytics",
-      "category": "Cloud Kitchen",
+      "slug": "Jad's Kitchen",
+      "category": "Jad's Kitchen",
       "imageSide": "Right",
       "title": "How a cloud kitchen in Ahmedabad standardized its menu and grew nearly 4X with On2Cook.",
       "cardTitlePlain": "From 40 to 150 Orders a Day",
       "cardTitleHighlight": "Built on Consistent Taste",
-      "cardExcerpt": "How Urvi Analytics Built a More Consistent Kitchen with On2Cook",
+      "cardExcerpt": "How Jad's Kitchen Built a More Consistent Kitchen with On2Cook",
       "cardImage": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "heroImage": "https://images.unsplash.com/photo-1758578484459-677bfbbd00f7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "snapshot": {
-        "description": "Urvi Analytics is a cloud kitchen based in Ahmedabad, handling close to 150 orders a day. Built on standardized cooking and consistent taste, the kitchen grew its business into a recognizable, repeatable food experience.",
+        "description": "Jad's Kitchen is a cloud kitchen based in Ahmedabad, handling close to 150 orders a day. Built on standardized cooking and consistent taste, the kitchen grew its business into a recognizable, repeatable food experience.",
         "facts": [
           {
             "label": "Industry",
@@ -159,7 +159,7 @@
       },
       "challenge": {
         "title": "Keeping a Diverse Menu Consistent, Order After Order",
-        "description": "As Urvi Analytics grew, keeping taste, colour and texture consistent across every order became harder — without depending entirely on LPG cylinders or skilled kitchen staff.",
+        "description": "As Jad's Kitchen grew, keeping taste, colour and texture consistent across every order became harder — without depending entirely on LPG cylinders or skilled kitchen staff.",
         "points": [
           "High dependency on LPG cylinders for everyday cooking",
           "Consistent taste, colour and aroma across a varied menu",
@@ -170,7 +170,7 @@
       "solution": {
         "title": "Standardizing Taste with",
         "titleHighlight": "On2Cook",
-        "description": "Urvi Analytics used On2Cook to cook its core menu — North Indian gravies, biryanis, Chicken Schezwan, Chinese recipes, Dal Fry, mutton and egg — with standardized, repeatable results.",
+        "description": "Jad's Kitchen used On2Cook to cook its core menu — North Indian gravies, biryanis, Chicken Schezwan, Chinese recipes, Dal Fry, mutton and egg — with standardized, repeatable results.",
         "points": [
           "Zero dependency on LPG cylinders for everyday cooking",
           "Consistent taste, colour and aroma across every dish",
@@ -197,7 +197,7 @@
       },
       "results": {
         "title": "From Consistent Taste to 4X Growth",
-        "description": "Urvi Analytics began this phase of its journey at around 40 daily orders. Using On2Cook to standardize cooking across its menu, the business built a stronger foundation of consistent taste and repeatable quality.\n\nToday, Urvi Analytics handles close to 150 orders a day, nearly 4X where it started, with On2Cook helping shape the consistent food experience behind that growth.",
+        "description": "Jad's Kitchen began this phase of its journey at around 40 daily orders. Using On2Cook to standardize cooking across its menu, the business built a stronger foundation of consistent taste and repeatable quality.\n\nToday, Jad's Kitchen handles close to 150 orders a day, nearly 4X where it started, with On2Cook helping shape the consistent food experience behind that growth.",
         "points": [],
         "image": ""
       },
