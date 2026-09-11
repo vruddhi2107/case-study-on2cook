@@ -44,7 +44,7 @@
       "cardTitlePlain": "Cutting ₹11–12K in LPG Costs",
       "cardTitleHighlight": "Across 250+ Daily Orders",
       "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
-      "cardImage": "./assets/images/cardimage.png",
+      "cardImage": "assets/images/heroimage.png",
       "heroImage": "assets/images/heroimage.png",
       "snapshot": {
         "description": "Chef N Dish (Kabulee Kitchen) runs a high-volume cloud kitchen out of Jaipur, serving North Indian gravies, Chinese, and desserts. Handling 200-250 orders a day, the kitchen needed a way to keep up without rising costs or inconsistent results.",
@@ -87,7 +87,7 @@
           "Cut food wastage from 8–10% down to just 1–2%",
           "Delivered consistent taste across every batch"
         ],
-        "image": "assets/images/success.png"
+        "image": "./assets/images/cardimage.png"
       },
       "impact": {
         "stats": [
@@ -113,7 +113,7 @@
         "title": "A Leaner Kitchen, With Taste Consistency",
         "description": "With on2cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. Cooking that once took 35 minutes now takes just 12, and training a new hire has dropped from weeks to a few days — letting the kitchen run on 4 staff instead of 6 while handling 60% more orders, even through Zomato/Swiggy rush. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
         "points": [],
-        "image": ""
+        "image": "assets/images/success.png"
       },
       "quote": {
         "text": "",
