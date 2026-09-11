@@ -190,8 +190,8 @@
             "label": "Growth Multiple"
           },
           {
-            "value": "110+ Orders/Day",
-            "label": "Increase in Daily Orders"
+            "value": "110+",
+            "label": "Daily Order Increase"
           }
         ]
       },
