@@ -124,7 +124,12 @@
           "text": "Book a Demo",
           "url": "https://www.on2cook.com/#book_a_demo"
         }
-      ]
+      ],
+      "ctaBand": {
+        "titlePlain": "Ready to build a more",
+        "titleItalic": "consistent kitchen",
+        "subtitle": "See how on2cook can simplify your kitchen, too.."
+      }
     },
     {
       "slug": "Jad's Kitchen",
@@ -210,7 +215,8 @@
           "text": "Book a Demo",
           "url": "https://www.on2cook.com/#book_a_demo"
         }
-      ]
+      ],
+      "ctaBand": {}
     },
     {
       "slug": "haldiram",
@@ -300,7 +306,8 @@
         "text": "",
         "author": ""
       },
-      "ctas": []
+      "ctas": [],
+      "ctaBand": {}
     },
     {
       "slug": "tazatable",
@@ -399,7 +406,8 @@
           "text": "Download Case Study",
           "url": "https://on2cook.com/"
         }
-      ]
+      ],
+      "ctaBand": {}
     }
   ]
 }
