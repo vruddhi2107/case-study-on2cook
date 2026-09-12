@@ -173,6 +173,21 @@ def row_to_case_study(row: dict) -> dict:
         if text or url:
             ctas.append({"text": text, "url": url})
 
+    # Per-case-study override for the CTA band's heading/subtitle. Any of
+    # these left blank falls back to the site-wide value from the Site
+    # Settings tab (see settings_rows_to_meta) — mirrors the JS version in
+    # js/shared.js's sheetRowToCaseStudy, keep the two in sync.
+    cta_band = {}
+    cta_title_plain = g("cta_title_plain")
+    cta_title_italic = g("cta_title_italic")
+    cta_subtitle = g("cta_subtitle")
+    if cta_title_plain:
+        cta_band["titlePlain"] = cta_title_plain
+    if cta_title_italic:
+        cta_band["titleItalic"] = cta_title_italic
+    if cta_subtitle:
+        cta_band["subtitle"] = cta_subtitle
+
     return {
         "slug": g("slug"),
         "category": g("category"),
@@ -216,6 +231,7 @@ def row_to_case_study(row: dict) -> dict:
             "author": g("quote_author"),
         },
         "ctas": ctas,
+        "ctaBand": cta_band,
     }
 
 

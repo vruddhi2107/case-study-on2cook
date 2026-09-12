@@ -27,7 +27,11 @@
     crumbCurrent.textContent = `${cs.cardTitlePlain} ${cs.cardTitleHighlight}`.trim();
 
     root.innerHTML = detailMarkup(cs);
-    ctaSlot.innerHTML = renderCtaBand(meta, cs.ctas);
+    // This case study's own cta_title_plain / cta_title_italic / cta_subtitle
+    // columns (if filled in) override the site-wide CTA band copy just for
+    // this page — see sheetRowToCaseStudy's ctaBand in shared.js.
+    const ctaMeta = { ...meta, ctaBand: { ...meta.ctaBand, ...(cs.ctaBand || {}) } };
+    ctaSlot.innerHTML = renderCtaBand(ctaMeta, cs.ctas);
     renderPageNav(items, index);
     renderChrome(meta);
 

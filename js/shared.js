@@ -136,6 +136,17 @@ function sheetRowToCaseStudy(row) {
     const url = g(`cta${i}_url`);
     if (text || url) ctas.push({ text, url });
   }
+  // Per-case-study override for the CTA band's heading/subtitle. Any of
+  // these left blank falls back to the site-wide value from the Site
+  // Settings tab (see settingsRowsToMeta) — only fill in the ones you
+  // actually want to differ for this case study.
+  const ctaBand = {};
+  const ctaTitlePlain = g("cta_title_plain");
+  const ctaTitleItalic = g("cta_title_italic");
+  const ctaSubtitle = g("cta_subtitle");
+  if (ctaTitlePlain) ctaBand.titlePlain = ctaTitlePlain;
+  if (ctaTitleItalic) ctaBand.titleItalic = ctaTitleItalic;
+  if (ctaSubtitle) ctaBand.subtitle = ctaSubtitle;
   return {
     slug: g("slug"),
     category: g("category"),
@@ -176,6 +187,7 @@ function sheetRowToCaseStudy(row) {
     },
     quote: { text: g("quote_text"), author: g("quote_author") },
     ctas,
+    ctaBand,
   };
 }
 

@@ -27,6 +27,7 @@ that `js/shared.js` and `scripts/sheet_to_json.py` reference in their comments.
 | `snapshot_industry` | The "Industry" fact in the Client Snapshot block |
 | `snapshot_locations` | The "Locations" fact in the Client Snapshot block |
 | `cta1_text` / `cta1_url` … `cta4_text` / `cta4_url` | Up to 4 custom CTA buttons on that case study's detail page. Leave all blank to use the default site-wide "Book a Demo" button instead. |
+| `cta_title_plain` / `cta_title_italic` / `cta_subtitle` | Optional per-case-study override of the CTA band's heading and subtitle at the bottom of that detail page. Leave any of them blank and it falls back to the matching `cta_title_plain` / `cta_title_italic` / `cta_subtitle` value from the **Site Settings** tab. |
 
 Everything else (challenge/solution/results/quote/stats/images) follows the
 same pattern — see the header row for the full column list, and the comment
