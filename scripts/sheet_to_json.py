@@ -30,7 +30,7 @@ Two tabs, two links:
     two CSV links on every page load.
 
 Sheet columns (one row per case study — see README.md for the full guide):
-    slug, category, imageSide, title,
+    slug, category, imageSide, clientLogo, title,
     cardTitlePlain, cardTitleHighlight, cardExcerpt, cardImage, heroImage,
     snapshot_description, snapshot_industry, snapshot_locations,
     snapshot_founded, snapshot_region,
@@ -38,10 +38,10 @@ Sheet columns (one row per case study — see README.md for the full guide):
     snapshot_founded_label, snapshot_region_label,
     challenge_title, challenge_description, challenge_points,
     solution_title, solution_titleHighlight, solution_description,
-    solution_points, solution_image,
+    solution_points, solution_image, solution_imageSide,
     stat1_value, stat1_label, stat2_value, stat2_label,
     stat3_value, stat3_label, stat4_value, stat4_label,
-    results_title, results_description, results_points, results_image,
+    results_title, results_description, results_points, results_image, results_imageSide,
     quote_text, quote_author,
     cta1_text, cta1_url, cta2_text, cta2_url,
     cta3_text, cta3_url, cta4_text, cta4_url
@@ -192,6 +192,7 @@ def row_to_case_study(row: dict) -> dict:
         "slug": g("slug"),
         "category": g("category"),
         "imageSide": g("imageSide", "right"),
+        "clientLogo": g("clientLogo"),
         "title": g("title"),
         "cardTitlePlain": g("cardTitlePlain"),
         "cardTitleHighlight": g("cardTitleHighlight"),
@@ -218,6 +219,7 @@ def row_to_case_study(row: dict) -> dict:
             "description": g("solution_description"),
             "points": split_points(g("solution_points")),
             "image": g("solution_image"),
+            "imageSide": g("solution_imageSide"),
         },
         "impact": {"stats": stats},
         "results": {
@@ -225,6 +227,7 @@ def row_to_case_study(row: dict) -> dict:
             "description": g("results_description"),
             "points": split_points(g("results_points")),
             "image": g("results_image"),
+            "imageSide": g("results_imageSide"),
         },
         "quote": {
             "text": g("quote_text"),
