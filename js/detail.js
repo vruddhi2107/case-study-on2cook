@@ -102,7 +102,7 @@
           <p>${escapeHtml(ch.description || "")}</p>
         </div>
         ${(ch.points && ch.points.length) ? `
-        <div class="media-box media-box--list">
+        <div class="media-box--list">
           <ul class="check-list bad">
             ${ch.points.map((pt) => `<li><span class="ico">${iconCross()}</span>${escapeHtml(pt)}</li>`).join("")}
           </ul>
