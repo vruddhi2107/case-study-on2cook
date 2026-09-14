@@ -40,6 +40,7 @@
       "slug": "chef-n-dish",
       "category": "Chef N Dish - Jaipur",
       "imageSide": "left",
+      "clientLogo": "",
       "title": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with On2Cook.",
       "cardTitlePlain": "Cutting ₹11–12K in LPG Costs",
       "cardTitleHighlight": "Across 250+ Daily Orders",
@@ -87,7 +88,8 @@
           "Cut food wastage from 8–10% down to just 1–2%",
           "Delivered consistent taste across every batch"
         ],
-        "image": "./assets/images/cardimage.PNG"
+        "image": "./assets/images/cardimage.PNG",
+        "imageSide": ""
       },
       "impact": {
         "stats": [
@@ -113,7 +115,8 @@
         "title": "A Leaner Kitchen, With Taste Consistency",
         "description": "With On2Cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. Cooking that once took 35 minutes now takes just 12, and training a new hire has dropped from weeks to a few days — letting the kitchen run on 4 staff instead of 6 while handling 60% more orders, even through Zomato/Swiggy rush. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
         "points": [],
-        "image": "assets/images/success.png"
+        "image": "assets/images/success.png",
+        "imageSide": ""
       },
       "quote": {
         "text": "",
@@ -135,6 +138,7 @@
       "slug": "Jad's Kitchen",
       "category": "Jad's Kitchen - Ahmedabad",
       "imageSide": "Right",
+      "clientLogo": "https://play-lh.googleusercontent.com/7LT2rQKkAaS8LA9ILxpW86RKWYKbr7SXXvIa-5BeR2lZ7EMOIAg4a_FZdFe35lRo-bOg8_HM9HwM-PpNXpqX6s8",
       "title": "How a cloud kitchen in Ahmedabad standardized its menu and grew nearly 4X with On2Cook.",
       "cardTitlePlain": "From 40 to 150 Orders a Day",
       "cardTitleHighlight": "Built on Consistent Taste",
@@ -182,7 +186,8 @@
           "Reduced dependency on skilled kitchen staff",
           "Less food wastage, cooking exactly what's required"
         ],
-        "image": "https://b.zmtcdn.com/data/pictures/chains/4/22006894/175102161721bcf57f-ee76-43e0-9001-502697041270.png"
+        "image": "https://b.zmtcdn.com/data/pictures/chains/4/22006894/175102161721bcf57f-ee76-43e0-9001-502697041270.png",
+        "imageSide": ""
       },
       "impact": {
         "stats": [
@@ -204,7 +209,8 @@
         "title": "From Consistent Taste to 4X Growth",
         "description": "Jad's Kitchen began this phase of its journey at around 40 daily orders. Using On2Cook to standardize cooking across its menu, the business built a stronger foundation of consistent taste and repeatable quality.\n\nToday, Jad's Kitchen handles close to 150 orders a day, nearly 4X where it started, with On2Cook helping shape the consistent food experience behind that growth.",
         "points": [],
-        "image": "assets/images/results2.png"
+        "image": "assets/images/results2.png",
+        "imageSide": ""
       },
       "quote": {
         "text": "",
@@ -222,6 +228,7 @@
       "slug": "haldiram",
       "category": "Cafe",
       "imageSide": "left",
+      "clientLogo": "",
       "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
       "cardTitlePlain": "Improving Efficiency & Consistency for",
       "cardTitleHighlight": "a Growing Cafe Chain",
@@ -269,7 +276,8 @@
           "Faster cooking with consistent quality",
           "Better control on costs & wastage"
         ],
-        "image": ""
+        "image": "",
+        "imageSide": ""
       },
       "impact": {
         "stats": [
@@ -300,7 +308,8 @@
           "Lower operational costs and food waste",
           "Happier customers and higher retention"
         ],
-        "image": ""
+        "image": "",
+        "imageSide": ""
       },
       "quote": {
         "text": "",
@@ -313,6 +322,7 @@
       "slug": "tazatable",
       "category": "QSR",
       "imageSide": "right",
+      "clientLogo": "",
       "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
       "cardTitlePlain": "Improving Efficiency & Consistency for",
       "cardTitleHighlight": "a Growing Cafe Chain",
@@ -360,7 +370,8 @@
           "Faster cooking with consistent quality",
           "Better control on costs & wastage"
         ],
-        "image": ""
+        "image": "",
+        "imageSide": ""
       },
       "impact": {
         "stats": [
@@ -391,7 +402,8 @@
           "Lower operational costs and food waste",
           "Happier customers and higher retention"
         ],
-        "image": ""
+        "image": "",
+        "imageSide": ""
       },
       "quote": {
         "text": "",
