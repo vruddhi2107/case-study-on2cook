@@ -53,7 +53,11 @@
     const imp = cs.impact || {};
     const res = cs.results || {};
     const quote = cs.quote || {};
-    const flip = cs.imageSide === "left"; // alternate section direction to mirror the listing card
+    // Solution/Results image side each default to the case study's overall
+    // imageSide (used for the listing card), but can be overridden per
+    // section via the solution_imageSide / results_imageSide sheet columns.
+    const solSide = sol.imageSide || cs.imageSide || "right";
+    const resSide = res.imageSide || cs.imageSide || "right";
 
     // Each block below is only rendered if it actually has content — leave
     // every field for a section blank in the sheet/JSON and it's skipped
@@ -72,7 +76,7 @@
     return `
       <div class="d-hero-fold">
         <section class="d-hero">
-          <span class="pill">${escapeHtml(cs.category || "")}</span>
+          ${cs.clientLogo ? `<img class="pill-logo" src="${escapeHtml(cs.clientLogo)}" alt="${escapeHtml(cs.category || cs.title || "")}">` : `<span class="pill">${escapeHtml(cs.category || "")}</span>`}
           <h1 class="reveal is-visible">${escapeHtml(`${cs.cardTitlePlain || ""} ${cs.cardTitleHighlight || ""}`.trim())}</h1>
           <p class="d-hero__sub">${escapeHtml(cs.title || "")}</p>
         </section>
@@ -110,7 +114,7 @@
       </section>` : ""}
 
       ${hasSolution ? `
-      <section class="section ${solMedia ? "section--split" : "section--full"} ${(solMedia && !flip) ? "flip" : ""} reveal">
+      <section class="section ${solMedia ? "section--split" : "section--full"} ${(solMedia && solSide !== "left") ? "flip" : ""} reveal">
         ${solMedia ? `<div class="media-box">${solMedia}</div>` : ""}
         <div class="section-text">
           <span class="eyebrow">The Solution</span>
@@ -126,7 +130,7 @@
       <section class="impact reveal">
         <span class="eyebrow">The Impact</span>
         <h3>The impact after switching</h3>
-        <p style="color:var(--ink-60);font-size:15.5px;max-width:60ch;margin-top:10px;">The transformation led to measurable improvements across key operations and customer metrics.</p>
+        <p class="impact__subtitle">The transformation led to measurable improvements across key operations and customer metrics.</p>
         <div class="impact-grid">
           ${imp.stats.map((s) => `
             <div class="stat">
@@ -137,7 +141,7 @@
       </section>` : ""}
 
       ${hasResults ? `
-      <section class="section ${resMedia ? "section--split" : "section--full"} ${(resMedia && flip) ? "flip" : ""} reveal">
+      <section class="section ${resMedia ? "section--split" : "section--full"} ${(resMedia && resSide === "left") ? "flip" : ""} reveal">
         <div class="section-text">
           <span class="eyebrow">The Results</span>
           <h3>${escapeHtml(res.title || "The Results")}</h3>
