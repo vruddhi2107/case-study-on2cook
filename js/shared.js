@@ -151,6 +151,7 @@ function sheetRowToCaseStudy(row) {
     slug: g("slug"),
     category: g("category"),
     imageSide: g("imageSide", "right"),
+    clientLogo: g("clientLogo"),
     title: g("title"),
     cardTitlePlain: g("cardTitlePlain"),
     cardTitleHighlight: g("cardTitleHighlight"),
@@ -177,6 +178,7 @@ function sheetRowToCaseStudy(row) {
       description: g("solution_description"),
       points: splitPoints(g("solution_points")),
       image: g("solution_image"),
+      imageSide: g("solution_imageSide"),
     },
     impact: { stats },
     results: {
@@ -184,6 +186,7 @@ function sheetRowToCaseStudy(row) {
       description: g("results_description"),
       points: splitPoints(g("results_points")),
       image: g("results_image"),
+      imageSide: g("results_imageSide"),
     },
     quote: { text: g("quote_text"), author: g("quote_author") },
     ctas,
