@@ -1,7 +1,7 @@
 /* ==========================================================================
-   on2cook — Case Studies
-   Brand: Red #ff0000 · Black #000000 · White #ffffff
-   Type:  Montserrat (headings) · DIN Next (body)
+   on2cook â€” Case Studies
+   Brand: Red #ff0000 Â· Black #000000 Â· White #ffffff
+   Type:  Montserrat (headings) Â· DIN Next (body)
    ========================================================================== */
 
 /* ---- Fonts ---- */
@@ -106,7 +106,7 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Actual nav height is measured in JS (syncNavHeightVar) and written
-     here so the hero fold below it can size against the real value —
+     here so the hero fold below it can size against the real value â€”
      this is just the pre-JS fallback so there's no flash/jump. */
   --nav-h: 86px;
 }
@@ -372,7 +372,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .card__media {
   position: relative;
-  /* Fixed box — width from the grid column, height from this clamp.
+  /* Fixed box â€” width from the grid column, height from this clamp.
      Every card's image box is this exact size regardless of what
      photo (and whatever its own pixel dimensions) gets dropped in;
      object-fit: cover crops the image to match, never the reverse. */
@@ -406,7 +406,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: 22px;
 }
 .ph::before {
-  /* corner registration marks — a restrained "artwork pending" cue instead of a busy pattern */
+  /* corner registration marks â€” a restrained "artwork pending" cue instead of a busy pattern */
   content: "";
   position: absolute;
   inset: 14px;
@@ -462,8 +462,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .cta-band .btn { position: relative; }
 
-/* Supports 1–4 CTA buttons per case study (see cs.ctas / cta1_text.. in
-   the sheet) — the first is the solid white button, any extra ones
+/* Supports 1â€“4 CTA buttons per case study (see cs.ctas / cta1_text.. in
+   the sheet) â€” the first is the solid white button, any extra ones
    render as outline buttons alongside it. Wraps on narrow screens. */
 .cta-band__buttons {
   position: relative;
@@ -481,7 +481,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .btn--outline-white:hover { background: rgba(255, 255, 255, 0.15); border-color: var(--white); }
 
 /* ==========================================================================
-   Footer — matches the on2cook.com production footer reference
+   Footer â€” matches the on2cook.com production footer reference
    ========================================================================== */
 .site-footer {
   background: var(--black);
@@ -621,7 +621,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Wraps the title/subtitle block + hero image together and sizes the
    pair to the viewport space left under the floating nav, so the pill,
    title, subtitle and hero image are all visible without scrolling on
-   first load — see requirement "hero in one view". Falls back to its
+   first load â€” see requirement "hero in one view". Falls back to its
    natural (taller-than-viewport-safe) height on very short viewports
    via min-height rather than a hard cap, so nothing ever gets clipped. */
 .d-hero-fold {
@@ -652,6 +652,14 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: 8px 20px;
   border-radius: var(--radius-pill);
   margin-bottom: clamp(12px, 2.2vh, 22px);
+}
+.pill-logo {
+  display: block;
+  height: clamp(28px, 4vh, 44px);
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  margin: 0 auto clamp(12px, 2.2vh, 22px);
 }
 .d-hero h1 {
   font-size: clamp(50px, min(6.4vw, 6.4vh), 72px);
@@ -826,7 +834,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   border-radius: var(--radius-lg);
 }
 /* Section rendered without a media column at all (image skipped in the
-   sheet) — text runs the full container width instead of a 2-up grid. */
+   sheet) â€” text runs the full container width instead of a 2-up grid. */
 .section--full { display: block; max-width: 72ch; }
 .section--full .check-list { margin-top: 4px; }
 
@@ -856,12 +864,27 @@ ul { margin: 0; padding: 0; list-style: none; }
   justify-content: center;
   gap: 20px;
 }
+.impact__subtitle {
+  color: var(--ink-60);
+  font-size: clamp(12px, 1.35vw, 15.5px);
+  margin-top: 10px;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  /* Fitting the full sentence on one line stops being readable below
+     this width â€” wrap normally instead of shrinking the font further. */
+  .impact__subtitle {
+    white-space: normal;
+    font-size: 14px;
+    max-width: 60ch;
+  }
+}
 .stat {
   background: var(--black);
   border-radius: var(--radius-md);
   padding: 30px 22px;
   text-align: center;
-  /* Same self-centering approach as .fact above — works for any number
+  /* Same self-centering approach as .fact above â€” works for any number
      of KPIs the sheet defines, not just multiples of 4. */
   flex: 1 1 240px;
   max-width: 280px;
