@@ -7,43 +7,43 @@
     "ctaBand": {
       "titlePlain": "Ready to build a more",
       "titleItalic": "consistent kitchen?",
-      "subtitle": "See how on2cook can simplify your kitchen, too.",
+      "subtitle": "See how On2Cook can simplify your kitchen, too.",
       "buttonText": "Book a Demo",
-      "buttonUrl": "https://www.on2cook.com/#book_a_demo"
+      "buttonUrl": "https://www.On2Cook.com/#book_a_demo"
     },
-    "siteUrl": "https://on2cook.com",
+    "siteUrl": "https://On2Cook.com",
     "tagline": "World's **FASTEST** Cooking Device",
     "contact": {
-      "email": "sales@on2cook.com",
+      "email": "sales@On2Cook.com",
       "phone": "+91 90999 40020",
       "location": "Ahmedabad, India"
     },
     "socialLinks": [
       {
         "platform": "facebook",
-        "url": "https://www.facebook.com/on2cook"
+        "url": "https://www.facebook.com/On2Cook"
       },
       {
         "platform": "instagram",
-        "url": "https://www.instagram.com/on2cook"
+        "url": "https://www.instagram.com/On2Cook"
       },
       {
         "platform": "linkedin",
-        "url": "https://www.linkedin.com/company/on2cook"
+        "url": "https://www.linkedin.com/company/On2Cook"
       }
     ],
-    "privacyUrl": "https://on2cook.com/privacy",
-    "termsUrl": "https://on2cook.com/terms"
+    "privacyUrl": "https://On2Cook.com/privacy",
+    "termsUrl": "https://On2Cook.com/terms"
   },
   "caseStudies": [
     {
       "slug": "chef-n-dish",
-      "category": "Chef N Dish",
+      "category": "Chef N Dish - Jaipur",
       "imageSide": "left",
-      "title": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
+      "title": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with On2Cook.",
       "cardTitlePlain": "Cutting ₹11–12K in LPG Costs",
       "cardTitleHighlight": "Across 250+ Daily Orders",
-      "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with on2cook.",
+      "cardExcerpt": "How a high-volume kitchen in Jaipur cut LPG costs, simplified operations, and kept consistent quality with On2Cook.",
       "cardImage": "assets/images/heroimage.png",
       "heroImage": "assets/images/heroimage.png",
       "snapshot": {
@@ -72,14 +72,14 @@
         "description": "Keeping up with daily demand meant relying on 5-6 LPG cylinders every month. As the kitchen got busier, costs kept climbing — training new staff took weeks and so did the pressure on cooks to keep every dish consistent.",
         "points": [
           "High monthly cost of ₹13,000–17,000 from 5-6 LPG cylinders",
-          "Taste consistency dependent on skilled cooks",
+          "6-member kitchen staff needed to manage volume",
           "Food wastage adding to daily costs",
-          "6-member kitchen staff needed to manage volume"
+          "Taste consistency dependent on skilled cooks"
         ]
       },
       "solution": {
         "title": "Switching to",
-        "titleHighlight": "on2cook",
+        "titleHighlight": "On2Cook",
         "description": "Chef N Dish brought in 3 On2Cook units to replace LPG-based cooking. With standardized, 6-in-1 cooking technology, the kitchen could run leaner without compromising on taste.",
         "points": [
           "Replaced LPG cylinders with O2Cook’s Smart cooking Technology",
@@ -92,7 +92,7 @@
       "impact": {
         "stats": [
           {
-            "value": "₹11–12K",
+            "value": "₹12–15K",
             "label": "Monthly Savings"
           },
           {
@@ -111,7 +111,7 @@
       },
       "results": {
         "title": "A Leaner Kitchen, With Taste Consistency",
-        "description": "With on2cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. Cooking that once took 35 minutes now takes just 12, and training a new hire has dropped from weeks to a few days — letting the kitchen run on 4 staff instead of 6 while handling 60% more orders, even through Zomato/Swiggy rush. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
+        "description": "With On2Cook, Chef N Dish now runs a leaner kitchen with higher profit margins, lower dependency on skilled chefs, and the same consistent taste in every order. Cooking that once took 35 minutes now takes just 12, and training a new hire has dropped from weeks to a few days — letting the kitchen run on 4 staff instead of 6 while handling 60% more orders, even through Zomato/Swiggy rush. It's also freed up kitchen staff to handle other tasks while the cooking runs on its own.",
         "points": [],
         "image": "assets/images/success.png"
       },
@@ -122,18 +122,18 @@
       "ctas": [
         {
           "text": "Book a Demo",
-          "url": "https://www.on2cook.com/#book_a_demo"
+          "url": "https://www.On2Cook.com/#book_a_demo"
         }
       ],
       "ctaBand": {
         "titlePlain": "Ready to build a more",
         "titleItalic": "consistent kitchen",
-        "subtitle": "See how on2cook can simplify your kitchen, too.."
+        "subtitle": "See how On2Cook can simplify your kitchen, too.."
       }
     },
     {
       "slug": "Jad's Kitchen",
-      "category": "Jad's Kitchen",
+      "category": "Jad's Kitchen - Ahmedabad",
       "imageSide": "Right",
       "title": "How a cloud kitchen in Ahmedabad standardized its menu and grew nearly 4X with On2Cook.",
       "cardTitlePlain": "From 40 to 150 Orders a Day",
@@ -213,7 +213,7 @@
       "ctas": [
         {
           "text": "Book a Demo",
-          "url": "https://www.on2cook.com/#book_a_demo"
+          "url": "https://www.On2Cook.com/#book_a_demo"
         }
       ],
       "ctaBand": {}
@@ -225,7 +225,7 @@
       "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
       "cardTitlePlain": "Improving Efficiency & Consistency for",
       "cardTitleHighlight": "a Growing Cafe Chain",
-      "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
+      "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with On2Cook.",
       "cardImage": "",
       "heroImage": "",
       "snapshot": {
@@ -261,8 +261,8 @@
       },
       "solution": {
         "title": "Switching to",
-        "titleHighlight": "on2cook",
-        "description": "Haldiram's partnered with on2cook to bring automation and precision to their kitchens. With standardized recipes, intelligent cooking, and consistent execution, on2cook helped streamline operations across all outlets.",
+        "titleHighlight": "On2Cook",
+        "description": "Haldiram's partnered with On2Cook to bring automation and precision to their kitchens. With standardized recipes, intelligent cooking, and consistent execution, On2Cook helped streamline operations across all outlets.",
         "points": [
           "Standardized recipes & automated cooking",
           "Reduced dependency on skilled staff",
@@ -316,7 +316,7 @@
       "title": "How Haldiram scaled operations and delighted more customers with On2Cook.",
       "cardTitlePlain": "Improving Efficiency & Consistency for",
       "cardTitleHighlight": "a Growing Cafe Chain",
-      "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with on2cook.",
+      "cardExcerpt": "How a fast-growing cafe chain improved order consistency, reduced manual effort, and enhanced customer experience with On2Cook.",
       "cardImage": "",
       "heroImage": "",
       "snapshot": {
@@ -352,8 +352,8 @@
       },
       "solution": {
         "title": "Switching to",
-        "titleHighlight": "on2cook",
-        "description": "Haldiram's partnered with on2cook to bring automation and precision to their kitchens. With standardized recipes, intelligent cooking, and consistent execution, on2cook helped streamline operations across all outlets.",
+        "titleHighlight": "On2Cook",
+        "description": "Haldiram's partnered with On2Cook to bring automation and precision to their kitchens. With standardized recipes, intelligent cooking, and consistent execution, On2Cook helped streamline operations across all outlets.",
         "points": [
           "Standardized recipes & automated cooking",
           "Reduced dependency on skilled staff",
@@ -400,11 +400,11 @@
       "ctas": [
         {
           "text": "Book a Demo",
-          "url": "https://www.on2cook.com/#book_a_demo"
+          "url": "https://www.On2Cook.com/#book_a_demo"
         },
         {
           "text": "Download Case Study",
-          "url": "https://on2cook.com/"
+          "url": "https://On2Cook.com/"
         }
       ],
       "ctaBand": {}
