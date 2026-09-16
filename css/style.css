@@ -655,9 +655,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .pill-logo {
   display: block;
-  height: clamp(28px, 4vh, 44px);
+  height: clamp(40px, 6vh, 60px);
   width: auto;
-  max-width: 220px;
+  max-width: 280px;
   object-fit: contain;
   margin: 0 auto clamp(12px, 2.2vh, 22px);
 }
